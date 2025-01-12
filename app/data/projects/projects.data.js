@@ -1,4 +1,13 @@
-const data = [
+
+export const mapProjectTabs = {
+  all: "All", be: "Backend only", fe: "Frontend  only", fs: "Full-stack"
+}
+
+export const mapProjectStatuses = {
+  ongoing: "Ongoing", inProgress: "In-progress", percent: (percentage) => `${percentage} Complete`
+}
+
+export const projectList = [
   {
     name: "Portfolio",
     summary: "Personal detail, acquired skills, live & on-going projects with",
@@ -194,4 +203,3 @@ const data = [
     ],
   },
 ];
-export default data;
