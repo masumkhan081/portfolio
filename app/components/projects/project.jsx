@@ -13,13 +13,13 @@ export default function Project({ name, versions, summary }) {
   return (
     // bg-gradient-to-t from-cyan-800 shadow-teal-500
     <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.9 }}
+      // initial={{ opacity: 0, scale: 0.5 }}
+      // animate={{ opacity: 1, scale: 1 }}
+      // transition={{ duration: 0.5 }}
+      // whileHover={{ scale: 1.05 }}
+      // whileTap={{ scale: 0.9 }}
      
-      className=" h-fit md:w-2/5 w-auto md:mx-auto mx-4 rounded-md  pb-2  bg-acquamarine bg-gradient-to-t from-teal-200"
+      className=" h-fit md:w-2/5 w-auto md:mx-auto mx-4 rounded-md brdr pb-2  bg-acquamarine bg-gradient-to-t from-teal-200"
     >
    
       <div className="relative flex flex-col items-center justify-center">

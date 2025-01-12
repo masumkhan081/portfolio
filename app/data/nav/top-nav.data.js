@@ -33,7 +33,7 @@ const navLinks = [
     href: "/skills",
   },
   {
-    text: "Projects",
+    text: "Personal Projects",
     icon: <FaLink className="icn_nav" />,
     href: "/projects",
   },
