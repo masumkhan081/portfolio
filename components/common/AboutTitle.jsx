@@ -12,7 +12,7 @@ export default function AboutTitle({ title, children }) {
           display: "none",
         },
       }}
-      className="block w-full font-inter font-bold bg-gradient-to-r from-teal-200 bg-transparent text-teal-900 text-center   rounded-s-md rounded-e-lg "
+      className=" font-mono w-full flex items-center gap-2 font-bold bg-gradient-to-r from-teal-200 bg-transparent text-teal-900 text-center rounded-s-md rounded-e-lg "
     >
       {title}
       {children}

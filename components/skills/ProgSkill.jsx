@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Uhunt from "../../public/images/Uhunt.png";
 // import { Github } from "react-icons/ai";
-import SkillSetIcon from "../../../public/icons/SkillSetIcon";
-import Github from "../../../public/icons/Github";
+import SkillSetIcon from "../../public/icons/SkillSetIcon";
+import Github from "../../public/icons/Github";
 
 //
 export default function ProgSkill() {

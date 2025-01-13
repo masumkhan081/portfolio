@@ -7,19 +7,23 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
 ::-webkit-scrollbar {
   width: 0.35rem;
   height: 0.35rem;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-track-piece {
   background: #ffffff;
 }
+
 ::-webkit-scrollbar-button {
   background: #ffffff;
   height: 0px;
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #470303;
   height: 20px;
@@ -31,15 +35,15 @@
 }
 
 .btn_nav {
-  @apply bg-orange-800 text-wh text-center  px-3 py-1 rounded-md  text-sm font-averia;
+  @apply bg-orange-800 text-wh text-center px-3 py-1 rounded-md text-sm font-averia;
 }
 
 .icn_socials {
-  @apply inline  w-8 h-8 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
+  @apply inline w-8 h-8 text-dark-green bg-acquamarine border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_socials_sm {
-  @apply inline  w-7 h-7 text-dark-green bg-acquamarine  border-teal-800 border-b rounded-md p-1;
+  @apply inline w-7 h-7 text-dark-green bg-acquamarine border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_nav {
@@ -47,11 +51,15 @@
 }
 
 .nav_link {
-  @apply flex gap-1 justify-center items-center border border-emerald-400 text-center px-2 font-sans text-sm sm:w-fit w-full text-dark-green hover:text-teal-800;
+  @apply flex gap-1 justify-center items-center text-center px-2 font-sans text-sm sm:w-fit w-full text-teal-800;
 }
 
 .styleTechnoSkill {
-  @apply md:w-[250px] sm:w-[200px] w-full h-fit bg-acquamarine text-dark-brown bg-gradient-to-b from-slate-300 rounded-md bg-opacity-30  p-3;
+  @apply md:w-[250px] sm:w-[200px] w-full h-fit bg-acquamarine text-dark-brown bg-gradient-to-b from-slate-300 rounded-md bg-opacity-30 p-3;
+}
+
+.wn {
+  @apply whitespace-nowrap
 }
 
 .brdr {

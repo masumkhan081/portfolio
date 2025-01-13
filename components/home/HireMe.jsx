@@ -2,21 +2,21 @@ import React from "react";
 import ListItem from "../common/ListItem";
 import AboutTitle from "../common/AboutTitle";
 import Image from "next/image";
-import Hireme from "../../../public/images/hireme.png";
-import positions from "../../data/home/positions.data";
+import Hireme from "../../public/images/hireme.png";
+import positions from "../../data/home.data/positions.data";
 
 export default function HireMe() {
   return (
-    <div className=" rounded-md ">
-      <AboutTitle title="Looking For">
+    <div className="w-full ">
+      <AboutTitle title="Seeking Role:">
+        <span className="text-xs font-normal">(MERN/PERN/Next)</span>
         <Image
           src={Hireme}
-          className="w-7 h-6 inline float-right bg-slate-200 rounded-e-lg"
+          className="w-8 h-6 ml-auto inline bg-slate-200 rounded-e-lg"
           alt="job"
         />
       </AboutTitle>
-      <ul>
-        <ListItem key={Math.random()} boldText={"Positions:"}></ListItem>
+      <ul className="py-2">
         {positions.map((position, ind) => {
           return <ListItem key={ind} plainText={position}></ListItem>;
         })}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 //  icon & images
-import { profileLinks } from "../../data/home/social.data";
-
+import { profileLinks } from "../../data/home.data/social.data";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import AboutTitle from "../common/AboutTitle";
@@ -12,7 +11,7 @@ export default function FindMe() {
   const [toolTip, setToolTip] = useState("");
 
   return (
-    <div className="bg-acquamarine ">
+    <div className="w-full ">
       <div className="flex gap-2 ">
         <AboutTitle title={"Find Me"} />
         <span className="font-inter text-sm font-light text-yellow-700">

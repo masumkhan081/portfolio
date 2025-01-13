@@ -7,7 +7,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 import Button from "../common/Button";
 import NavLink from "../common/NavLink";
-import navLinks from "../../data/nav/top-nav.data";
+import navLinks from "../../data/nav.data/top-nav.data";
 //
 export default function Nav() {
   const [menuFolded, setMenuFolded] = useState(true);

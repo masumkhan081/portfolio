@@ -1,9 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
-import Project from "../components/projects/project";
+import Project from "../../components/projects/project";
 // import { animated, useSpring } from "@react-spring/web";
-import { projectList } from "../data/projects/projects.data";
-import Button from "../components/common/Button";
+import { projectList } from "../../data/projects.data/projects.data";
+import Button from "../../components/common/Button";
+import Card from "../../components/projects/Card";
 //
 export default function page() {
   // useEffect(() => {
@@ -23,12 +24,17 @@ export default function page() {
   return (
 
 
-    <div className="brdr flex flex-col gap-3 ">
+    <div className=" flex flex-col gap-3 ">
+
+      <Card />
+
 
       <div className="flex justify-center">
         <Button txt={"Live "} />
         <Button txt={"Back-end only"} />
-        <Button txt={"Front-end Only"} /></div>
+        <Button txt={"Front-end Only"} />
+
+      </div>
 
       <div
         // style={{ ...springs }}

@@ -8,8 +8,8 @@ import {
   backendSKills,
   fronendSKills,
   otherSkills,
-} from "../data/skills/devSkills.data";
-import personalSkills from "../data/skills/personal.data";
+} from "../../data/skills.data/devSkills.data";
+import personalSkills from "../../data/skills.data/personal.data";
 import {
   languages,
   backendTechs,
@@ -18,13 +18,13 @@ import {
   frontendTechs,
   dbTechs,
   devProcessTechs,
-} from "../data/skills/technologies.data";
-import TechnoSkill from "../components/skills/TechnoSkill";
-import DevSkill from "../components/skills/DevSkill";
-import PersonalSkill from "../components/skills/PerSkill";
-import EnhancedTitle from "../components/common/EnhancedTitle";
+} from "../../data/skills.data/technologies.data";
+import TechnoSkill from "../../components/skills/TechnoSkill";
+import DevSkill from "../../components/skills/DevSkill";
+import PersonalSkill from "../../components/skills/PerSkill";
+import EnhancedTitle from "../../components/common/EnhancedTitle";
 //
-import algoList from "../data/skills/algorithms.data";
+import algoList from "../../data/skills.data/algorithms.data";
 
 //
 export default function Page() {

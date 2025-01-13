@@ -7,25 +7,25 @@ import AboutTitle from "../common/AboutTitle";
 export default function Academy() {
   const educations = [
     {
-      title: "SSC",
+      title: "SSC (2011)",
       desc: "(Sci), Sylhet Govt. Pilot High School",
       icon: <FaUniversity />,
     },
     {
-      title: "HSC",
+      title: "HSC (2014)",
       desc: "(Sci), Beanibazar Govt College",
       icon: <FaUniversity />,
     },
     {
-      title: "B.Sc",
+      title: "B.Sc (Apr-2019)",
       desc: "(CSE), North East University BD",
       icon: <FaUniversity />,
     },
   ];
   return (
-    <>
-      <div className="w-1/2"><AboutTitle title="Academy" /></div>
-      <ul className="ps-2">
+    <div className="w-full">
+      <AboutTitle title="Academy" />
+      <ul className="ps-2 py-1">
         {educations.map((eduItem, ind) => {
           return (
             <ListItem
@@ -37,6 +37,6 @@ export default function Academy() {
           );
         })}
       </ul>
-    </>
+    </div>
   );
 }

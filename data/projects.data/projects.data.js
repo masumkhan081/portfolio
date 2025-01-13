@@ -64,21 +64,7 @@ export const projectList = [
           "EJS, Bootstrap",
         ],
       },
-      {
-        version: "2",
-        deploy_link: "https://v-2-task-distribution.onrender.com",
-        github_link: "https://github.com/masumkhan081/v-2-task-distribution",
-        yt_link: "",
-        tools: [
-          "PostgreSQL",
-          "ElephantSQL",
-          "PG",
-          "Express, ejs",
-          "J-W-T",
-          "Passport",
-          "Nodmailer",
-        ],
-      },
+
     ],
   },
   {
@@ -102,21 +88,7 @@ export const projectList = [
           "React-icons",
         ],
       },
-      {
-        version: "2",
-        deploy_link: "https://v-2-resume-builder.vercel.app",
-        github_link: "https://github.com/masumkhan081/v-2-resume-builder",
-        yt_link: "",
-        tools: [
-          "Next js",
-          "Material-UI",
-          "Redux",
-          "Formik + yup",
-          "Tailwind CSS",
-          "Fireb auth, frestore",
-          "Framer-motion",
-        ],
-      },
+
     ],
   },
   {
@@ -203,3 +175,4 @@ export const projectList = [
     ],
   },
 ];
+

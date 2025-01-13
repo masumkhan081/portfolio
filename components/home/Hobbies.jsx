@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { hobbies } from "../../data/home/hobbies.data";
+import { hobbies } from "../../data/home.data/hobbies.data";
 import AboutTitle from "../common/AboutTitle";
 
 export default function Hobbies() {
@@ -8,7 +8,7 @@ export default function Hobbies() {
   const [toolTip, setToolTip] = useState("");
 
   return (
-    <div>
+    <div className="w-full">
       <div className="flex gap-2 ">
         <AboutTitle title={"Hobbies"} />
         <span className="font-inter text-sm font-light text-yellow-700">

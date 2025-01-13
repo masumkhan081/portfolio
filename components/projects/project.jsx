@@ -1,8 +1,8 @@
 import React from "react";
-import LinkIcon from "../../../public/icons/LinkIcon";
-import Youtube from "../../../public/icons/Youtube";
-import Github from "../../../public/icons/Github";
-import YT2 from "../../../public/icons/YT2";
+import LinkIcon from "../../public/icons/LinkIcon";
+import Youtube from "../../public/icons/Youtube";
+import Github from "../../public/icons/Github";
+import YT2 from "../../public/icons/YT2";
 import CustomLink from "../common/CustomLink";
 import EnhancedTitle from "../common/EnhancedTitle";
 import { motion   } from "framer-motion";
