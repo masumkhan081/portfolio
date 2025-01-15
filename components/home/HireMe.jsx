@@ -12,7 +12,7 @@ export default function HireMe() {
         <span className="text-xs font-normal">(MERN/PERN/Next)</span>
         <Image
           src={Hireme}
-          className="w-8 h-6 ml-auto inline bg-slate-200 rounded-e-lg"
+          className="w-8 h-6 ml-auto inline bg-slate-100 rounded-e-lg"
           alt="job"
         />
       </AboutTitle>

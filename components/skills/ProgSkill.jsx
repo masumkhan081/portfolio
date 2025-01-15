@@ -85,7 +85,7 @@ function Uhunt_Stats() {
           <div className="modal-action ">
             <label
               htmlFor="modal-uhunt"
-              className="btn btn-square bg-slate-200 btn-outline btn-sm w-full"
+              className="btn btn-square bg-slate-100 btn-outline btn-sm w-full"
             >
               Close
             </label>
@@ -116,7 +116,7 @@ function Cl_Algo_Modal() {
             </label>
           </div>
 
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Backtracking
@@ -135,7 +135,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Dynamic Algorithm
@@ -172,7 +172,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Graph & Greedy Algorithms{" "}
@@ -197,7 +197,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Number Theory
@@ -236,7 +236,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Pattern Matching
@@ -259,7 +259,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Recursion
@@ -286,7 +286,7 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-200 py-0 ">
+          <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Searching And Sorting
@@ -313,7 +313,7 @@ function Cl_Algo_Modal() {
           <div className="modal-action ">
             <label
               htmlFor="modal-classicalgo"
-              className="btn btn-square bg-slate-200 btn-outline btn-sm w-full"
+              className="btn btn-square bg-slate-100 btn-outline btn-sm w-full"
             >
               Close
             </label>

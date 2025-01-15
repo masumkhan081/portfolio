@@ -1,7 +1,13 @@
 
 export const mapProjectTabs = {
-  all: "All", be: "Backend only", fe: "Frontend  only", fs: "Full-stack"
-}
+  all: "All",
+  be: "Backend only",
+  fe: "Frontend only",
+  fs: "Full-stack"
+};
+
+mapProjectTabs[Object.keys(mapProjectTabs)[0]]
+
 
 export const mapProjectStatuses = {
   ongoing: "Ongoing", inProgress: "In-progress", percent: (percentage) => `${percentage} Complete`
@@ -11,13 +17,13 @@ export const projectList = [
   {
     name: "Portfolio",
     summary: "Personal detail, acquired skills, live & on-going projects with",
-
     versions: [
       {
         version: "1",
         deploy_link: "https://masumk081.web.app",
         github_link: "https://github.com/masumkhan081/masumkhan081.github.io",
         yt_link: "#",
+        type: mapProjectTabs.fe,
         tools: ["Bootstrap-5"],
       },
       {
@@ -25,21 +31,8 @@ export const projectList = [
         deploy_link: "https://v-2-mk.vercel.app",
         github_link: "https://github.com/masumkhan081/v-2-portfolio",
         yt_link: "",
+        type: mapProjectTabs.fe,
         tools: ["Next", "Tailwind CSS", "daisyUI", "React-spring"],
-      },
-    ],
-  },
-  {
-    name: "Deshcareer website",
-    summary: "A regular business site with no back-end.",
-
-    versions: [
-      {
-        version: "1",
-        deploy_link: "https://deshcareer.vercel.app/",
-        github_link: "https://github.com/masumkhan081/deshcareer",
-        yt_link: "",
-        tools: ["React-Next", "Tailwind CSS", "React-spring"],
       },
     ],
   },
@@ -54,6 +47,7 @@ export const projectList = [
         deploy_link: "https://task-collaborator.onrender.com",
         github_link: "https://github.com/masumkhan081/task-collaborator",
         yt_link: "",
+        type: mapProjectTabs.fs,
         tools: [
           "MongoDB atlas",
           "mongoose",
@@ -78,6 +72,7 @@ export const projectList = [
         deploy_link: "https://resume-builder-081.netlify.app",
         github_link: "https://github.com/masumkhan081/resume-builder",
         yt_link: "",
+        type: mapProjectTabs.fs,
         tools: [
           "React-bootstrap",
           "React-spring",
@@ -92,7 +87,7 @@ export const projectList = [
     ],
   },
   {
-    name: "Drugs-Info",
+    name: "Pharmacy Mgmt Syst",
     summary:
       "An Info system of drugs, generics, groups, manufacturers with tabular view of data and actions on it to be transformed to prescription system in future.",
 
@@ -102,6 +97,7 @@ export const projectList = [
         deploy_link: "https://drugs-info.onrender.com",
         github_link: "https://github.com/masumkhan081/drugs.info",
         yt_link: "",
+        type: mapProjectTabs.fs,
         tools: [
           "Express",
           "MongoDB atlas",
@@ -114,65 +110,28 @@ export const projectList = [
     ],
   },
   {
-    name: "Complete Registration System",
+    name: "E-commerce",
     summary:
-      "A full registration system with email verification, pass recovery, pass reset utilizing passport strategies",
+      "An Info system of drugs, generics, groups, manufacturers with tabular view of data and actions on it to be transformed to prescription system in future.",
 
     versions: [
       {
         version: "1",
-        deploy_link: "https://reg-sys-passport.onrender.com/",
-        github_link: "https://github.com/masumkhan081/reg-sys-passport",
+        deploy_link: "https://drugs-info.onrender.com",
+        github_link: "https://github.com/masumkhan081/drugs.info",
         yt_link: "",
+        type: mapProjectTabs.be,
         tools: [
           "Express",
-          "Passport",
-          "Nodemailer",
-          "Bcrypt",
-          "Joi",
-          "J-W-T",
           "MongoDB atlas",
+          "Mongoose",
           "BS-5",
           "ejs",
+          "Fetch api",
         ],
       },
     ],
   },
-  {
-    name: "Dashboard",
-    summary:
-      "A react based admin dashboard + data visualization using visx, mui, and tailwind. Imaginary data and goal been set initially for look good purpose.",
 
-    versions: [
-      {
-        version: "1",
-        deploy_link: "https://v-1-dashboard.vercel.app",
-        github_link: "https://github.com/masumkhan081/dashboard",
-        yt_link: "",
-        tools: [
-          "Visx",
-          "Next",
-          "Tailwind css",
-          "Redux",
-          "React-spring",
-          "Faker js",
-        ],
-      },
-    ],
-  },
-  {
-    name: "Socket.io",
-    summary: "A not yet deployed chat system using- well the name suggest it!",
-
-    versions: [
-      {
-        version: "1",
-        deploy_link: "https://github.com/masumkhan081/socket-io",
-        github_link: "https://github.com/masumkhan081/socket-io",
-        yt_link: "",
-        tools: ["Socket.io"],
-      },
-    ],
-  },
 ];
 

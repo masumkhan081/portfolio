@@ -22,7 +22,7 @@ import Experiences from "../components/home/Experiences";
 export default function Home() {
   console.log("server side page top: ", typeof window === "undefined");
   return (
-    <div className="flex-grow rounded-sm bg-acquamarine">
+    <div className="flex-grow rounded-sm bg-slate-100 ">
       <div
         onScroll={() => setTest(JSON.stringify(isInViewport("footerid")))}
         className=" py-0 my-0 rounded sm:px-3.0 px-1.0 pt-1.0 grid md:grid-cols-2 grid-cols-1 gap-4   "
@@ -32,6 +32,7 @@ export default function Home() {
           <Academy />
           <Experiences />
         </div>
+
         <div className="font-mono  col-span-1 flex flex-col gap-2.0  justify-end md:items-center sm:items-center sm:py-1.0 md:py-4.0 md:px-3.0 sm:px-2.0 px-1.0  ">
           {/* contact & social profiles */}
           <FindMe />

@@ -51,7 +51,7 @@ export default function Page() {
     item === currentSubView ? setCurrentSubView("") : setCurrentSubView(item);
 
   return (
-    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px]  bg-acquamarine">
+    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px]  bg-slate-100">
       {/*                      
             Programming & Algorithms              
                                          */}

@@ -1,10 +1,9 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Project from "../../components/projects/project";
 // import { animated, useSpring } from "@react-spring/web";
-import { projectList } from "../../data/projects.data/projects.data";
+import { projectList, mapProjectTabs } from "../../data/projects.data/projects.data";
 import Button from "../../components/common/Button";
-import Card from "../../components/projects/Card";
 //
 export default function page() {
   // useEffect(() => {
@@ -21,27 +20,46 @@ export default function page() {
   //   to: { opacity: 1 },
   // });
   //
+
+  const [currentView, setCurrentView] = useState(
+    mapProjectTabs[Object.keys(mapProjectTabs)[0]]
+  );
+
+  // Handle button click
+  const handleTabClick = (tab) => {
+    setCurrentView(tab);
+  };
+
+  const sty_btn_tab = (tab) =>
+    "shadow border rounded-md px-2 py-1 text-sm font-mono " +
+    (currentView === tab ? "bg-slate-300 " : "");
+
+  // 
   return (
 
+    <div className=" flex flex-col items-center gap-4 bg-slate-100 sm:py-[50px] md:py-[65px] py-[45px]">
 
-    <div className=" flex flex-col gap-3 ">
+      <span>{currentView}</span>
 
-      <Card />
-
-
-      <div className="flex justify-center">
-        <Button txt={"Live "} />
-        <Button txt={"Back-end only"} />
-        <Button txt={"Front-end Only"} />
+      <div className="flex gap-2 justify-center w-fit rounded-md">
+        {mapProjectTabs && Object.values(mapProjectTabs).map((tab, ind) => {
+          return <Button
+            key={ind}
+            txt={tab}
+            style={sty_btn_tab(tab)}
+            onClick={() => handleTabClick(tab)} />
+        })}
 
       </div>
 
       <div
         // style={{ ...springs }}
-        className="w-full h-auto sm:py-[50px] md:py-[65px] py-[45px] sm:px-5 flex  md:flex-row flex-col flex-wrap bg-acquamarine justify-around gap-y-[45px]"
+        className="w-full brdr h-auto sm:px-5 flex  md:flex-row flex-col flex-wrap justify-around gap-y-[45px]"
       >
-
-        {projectList.map((project, i) => (
+        {projectList.filter((project) =>
+          currentView === mapProjectTabs.all ||
+          project.versions.some((version) => version.type === currentView)
+        ).map((project, i) => (
           <Project
             key={i}
             name={project.name}
@@ -50,7 +68,6 @@ export default function page() {
           />
         ))}
       </div>
-
 
     </div>
   );

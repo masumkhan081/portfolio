@@ -103,7 +103,7 @@ module.exports = {
         "dark-brown": "#362B06",
         "tea-green": "#DCFFB9",
         "papaya-whip": "#FFEACC",
-        "acquamarine": "#BFFFE4",
+        acq: "#FFEACC",
         pr: "#E2E8F0",
         "pr/300": "#6BCCCB",
         wh: "#FFFFFF",

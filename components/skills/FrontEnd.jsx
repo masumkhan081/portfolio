@@ -6,7 +6,7 @@ import AboutTitle from "../common/AboutTitle";
 export default function FrontEnd() {
   return (
     <>
-      <span className=" bg-slate-200 shadow-inner text-dark-brown flex justify-center items-center py-1 gap-2 text-1/1 font-averia font-semibold  rounded-sm">
+      <span className=" bg-slate-100 shadow-inner text-dark-brown flex justify-center items-center py-1 gap-2 text-1/1 font-averia font-semibold  rounded-sm">
         <FaClipboardList clsnames="me-1 inline w-6 h-6" /> <span>Front End</span>
       </span>
 

@@ -30,6 +30,13 @@
   border-radius: 10px;
 }
 
+body {
+  background-color: rgb(127, 255, 212);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .nav_drop_down {
   @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
 }
@@ -39,11 +46,11 @@
 }
 
 .icn_socials {
-  @apply inline w-8 h-8 text-dark-green bg-acquamarine border-teal-800 border-b rounded-md p-1;
+  @apply inline w-8 h-8 text-dark-green bg-slate-100 border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_socials_sm {
-  @apply inline w-7 h-7 text-dark-green bg-acquamarine border-teal-800 border-b rounded-md p-1;
+  @apply inline w-7 h-7 text-dark-green bg-slate-100 border-teal-800 border-b rounded-md p-1;
 }
 
 .icn_nav {
@@ -55,7 +62,7 @@
 }
 
 .styleTechnoSkill {
-  @apply md:w-[250px] sm:w-[200px] w-full h-fit bg-acquamarine text-dark-brown bg-gradient-to-b from-slate-300 rounded-md bg-opacity-30 p-3;
+  @apply md:w-[250px] sm:w-[200px] w-full h-fit bg-slate-100 text-dark-brown bg-gradient-to-b from-slate-300 rounded-md bg-opacity-30 p-3;
 }
 
 .wn {
