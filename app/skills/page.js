@@ -39,19 +39,19 @@ export default function Page() {
 
   const tabSty = (btnText) =>
     currentView === btnText
-      ? "shadow-inner shadow-teal-400 px-2 py-1 rounded-md"
-      : "shadow-inner shadow-teal-200 px-2 py-1 rounded-md";
+      ? "bg-slate-200 text-xs border-b border-slate-600 shadow-inner shadow-teal-800 px-2 py-1 rounded-md "
+      : "bg-slate-200 text-xs shadow-inner shadow-teal-800 px-2 py-1 rounded-md ";
 
   const subViewSty = (item) => (item === currentSubView ? "block  " : "hidden");
 
   const activeSty = (item) =>
-    item === currentSubView ? "rotate-180  " : "rotate-0";
+    item === currentSubView ? "rotate-180 text-teal-800 " : "rotate-0 text-teal-800";
 
   const handleSubView = (item) =>
     item === currentSubView ? setCurrentSubView("") : setCurrentSubView(item);
 
   return (
-    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px]  bg-slate-100">
+    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px] bg-slate-100">
       {/*                      
             Programming & Algorithms              
                                          */}
@@ -62,12 +62,10 @@ export default function Page() {
         // whileHover={{ scale: 1.05 }}
         className="  px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
       >
-        <div className="relative flex flex-col items-center justify-center">
-          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-          <EnhancedTitle name={`Programming & Algorithms ${currentSubView}`} />
-        </div>
 
-        <div className="w-auto mx-auto text-sm font-inter font-light rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
+        <EnhancedTitle name={`Programming & Algorithms`} />
+
+        <div className="w-auto mx-auto text-sm font-mono font-light text-teal-700 rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
           {Object.keys(algoList).map((tab, ind) => {
             return (
               <button
@@ -81,25 +79,25 @@ export default function Page() {
           })}
         </div>
 
-        <div className="my-6 rounded-md  ">
+        <div className="my-4 flex flex-col gap-2 ">
           {Object.keys(algoList[currentView]).map((item, ind) => {
             return (
               <div
-                className="rounded-md shadow-md flex flex-col gap-2 p-3"
+                className="font-mono rounded-3xl border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
                 key={ind}
               >
                 <button
                   onClick={() => handleSubView(item)}
-                  className="my-2 py-1 font-bold w-fit flex gap-2 justify-center items-center"
+                  className="px-2 py-0.125 bg-slate-300 text-teal-800 rounded-3xl shadow-md font-bold w-fit flex gap-2 justify-center items-center"
                 >
                   {item}
-                  <span className="rounded-full px-2 bg-yellow-900 text-yellow-100 text-lg">
+                  <span className="rounded-full px-2 bg-teal-800 text-yellow-100 font-normal">
                     {algoList?.[currentView]?.[item]?.length}
                   </span>
 
                   <IoIosArrowDown className={activeSty(item)} />
                 </button>
-                <ul className={`${subViewSty(item)} flex flex-col gap-1`}>
+                <ul className={`${subViewSty(item)} flex flex-col gap-1 ps-1.0`}>
                   {algoList?.[currentView]?.[currentSubView]?.map((itm, i) => {
                     return (
                       <li className="" key={i}>
@@ -113,19 +111,10 @@ export default function Page() {
           })}
         </div>
       </motion.div>
-      {/*                 
-      
-                  Personal Skills                   
-                  
-                                         */}
-
-      {/* <AlgorithmCard /> */}
 
       <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
-        <div className="relative flex flex-col items-center justify-center">
-          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-          <EnhancedTitle name="Development Skills" />
-        </div>
+        <EnhancedTitle name="Development Skills" />
+
         <div className="grid grid-cols-3 gap-3 justify-center">
           <DevSkill title={"fornt-end skill"} list={fronendSKills} />
           <DevSkill title={"back-end skill"} list={backendSKills} />
@@ -134,14 +123,12 @@ export default function Page() {
       </motion.div>
 
       <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
-        <div className="relative flex flex-col items-center justify-center">
-          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-          <EnhancedTitle name="Technological Skills" />
-        </div>
+        <EnhancedTitle name="Technological Skills" />
+
         <div className=" flex flex-wrap gap-x-2 justify-around sm:gap-y-5 gap-y-2 ">
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Languages"} list={languages} />
-          </div> 
+          </div>
 
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Fronend"} list={frontendTechs} />
@@ -160,10 +147,9 @@ export default function Page() {
       </motion.div>
 
       <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
-        <div className="relative flex flex-col items-center justify-center">
-          <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-          <EnhancedTitle name="Personal Skills" />
-        </div>
+
+        <EnhancedTitle name="Personal Skills" />
+
         <PersonalSkill list={personalSkills} />{" "}
       </motion.div>
     </div>

@@ -12,7 +12,7 @@ export default function TechnoSkill({ title, list }) {
   const style_common = "px-1 rounded bg-dark-brown text-slate-300";
 
   return (
-    <div>
+    <div className="">
       <SKillTitle SKillTitle={title} />
       <ul className=" space-y-2  my-3 text-sm ">
         {list.map(({ name, src, level }, ind) => {
