@@ -5,10 +5,10 @@ import Github from "../../public/icons/Github";
 import YT2 from "../../public/icons/YT2";
 import CustomLink from "../common/CustomLink";
 import EnhancedTitle from "../common/EnhancedTitle";
-import { motion   } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Project({ name, versions, summary }) {
-   
+
 
   return (
     // bg-gradient-to-t from-cyan-800 shadow-teal-500
@@ -18,14 +18,13 @@ export default function Project({ name, versions, summary }) {
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
-     
-      className=" h-fit md:w-2/5 w-auto md:mx-auto mx-4 rounded-md  pb-2  bg-slate-100 bg-gradient-to-t from-teal-200"
+
+      className=" h-fit md:w-2/5 w-auto md:mx-auto mx-4 rounded-md  pb-2  bg-gradient-to-b from-transparent to-slate-300"
     >
-   
-      <div className="relative flex flex-col items-center justify-center">
-        <span className="h-1 w-full block bg-teal-300 rounded-full shadow-inner shadow-slate-200"></span>
-        <EnhancedTitle name={name} />
-      </div>
+
+
+      <EnhancedTitle name={name} />
+
 
       <div className="mt-[40px] mb-4">
         <span className=" me-2 block font-semibold text-teal-700 font-averia text-md  w-fit  rounded-r-md px-2 ">
@@ -66,7 +65,7 @@ export default function Project({ name, versions, summary }) {
               {ver.tools.map((tool, j) => (
                 <span
                   key={j}
-                  className="bg-slate-100 drop-shadow-md shadow-inner shadow-teal-400 text-slate-900 h-5 text-sm font-sans rounded-lg px-2 py-0"
+                  className="  drop-shadow-md shadow-inner shadow-slate-400 text-slate-900 h-5 text-sm font-sans rounded-lg px-2 py-0"
                 >
                   {tool}
                 </span>

@@ -5,7 +5,7 @@ import Project from "../../components/projects/project";
 import { projectList, mapProjectTabs } from "../../data/projects.data/projects.data";
 import Button from "../../components/common/Button";
 //
-export default function page() {
+export default function Page() {
   // useEffect(() => {
   //   const isServer = typeof window === "undefined";
   //   if (isServer) {
@@ -39,9 +39,7 @@ export default function page() {
 
     <div className=" flex flex-col items-center gap-4 bg-slate-100 sm:py-[50px] md:py-[65px] py-[45px]">
 
-      <span>{currentView}</span>
-
-      <div className="flex gap-2 justify-center w-fit rounded-md">
+      <div className="flex gap-2 justify-center w-fit rounded-md mb-2.0">
         {mapProjectTabs && Object.values(mapProjectTabs).map((tab, ind) => {
           return <Button
             key={ind}
@@ -54,7 +52,7 @@ export default function page() {
 
       <div
         // style={{ ...springs }}
-        className="w-full brdr h-auto sm:px-5 flex  md:flex-row flex-col flex-wrap justify-around gap-y-[45px]"
+        className="w-full h-auto sm:px-5 flex  md:flex-row flex-col flex-wrap justify-around gap-y-[45px]"
       >
         {projectList.filter((project) =>
           currentView === mapProjectTabs.all ||
