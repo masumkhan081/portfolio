@@ -1,47 +1,47 @@
 export const languages = [
   {
     name: "Javascript",
-    src: "google.com",
+    src: "https://github.com/masumkhan081/javascript-code-notes",
     level: "expert",
   },
-  { name: "Typescript", src: "google.com", level: "expert" },
-  { name: "Rust", src: "google.com", level: "intermediate" },
-  { name: "C++", src: "google.com", level: "intermediate" },
-  { name: "Python", src: "google.com", level: "expert" },
-  { name: "Java", src: "google.com", level: "begineer" },
+  { name: "Typescript", src: "#", level: "expert" },
+  { name: "Rust", src: "#", level: "intermediate" },
+  { name: "C++", src: "#", level: "intermediate" },
+  { name: "Python", src: "#", level: "expert" },
+  { name: "Java", src: "#", level: "begineer" },
 
-  { name: "Assembly", src: "google.com", level: "begineer" },
+  { name: "Assembly", src: "#", level: "begineer" },
 ];
 export const frontendTechs = [
   {
     name: "Next-react-redux",
-    src: "google.com",
+    src: "#",
     level: "expert",
   },
-  { name: "quasar-vue-pinia", src: "google.com", level: "begineer" },
-  { name: "zustand", src: "google.com", level: "expert" },
-  { name: "shadCN", src: "google.com", level: "expert" },
-  { name: "apexcharts", src: "google.com", level: "expert" },
-  { name: "framer-motion", src: "google.com", level: "expert" },
+  { name: "quasar-vue-pinia", src: "#", level: "begineer" },
+  { name: "zustand", src: "#", level: "expert" },
+  { name: "shadCN", src: "#", level: "expert" },
+  { name: "apexcharts", src: "#", level: "expert" },
+  { name: "framer-motion", src: "#", level: "expert" },
 ];
 
 export const backendTechs = [
   {
     name: "express",
-    src: "google.com",
+    src: "#",
     level: "expert",
   },
-  { name: "nest", src: "google.com", level: "expert" },
-  { name: "nodemailer", src: "google.com", level: "expert" },
-  { name: "orama", src: "google.com", level: "expert" },
-  { name: "ssl", src: "google.com", level: "expert" },
-  { name: "stripe", src: "google.com", level: "expert" },
-  { name: "socket", src: "google.com", level: "expert" },
-  { name: "redis", src: "google.com", level: "expert" },
-  { name: "rabbitMQ", src: "google.com", level: "expert" },
-  { name: "passport", src: "google.com", level: "expert" },
-  { name: "zod / joi", src: "google.com", level: "expert" },
-  { name: "jwt", src: "google.com", level: "expert" },
+  { name: "nest", src: "#", level: "expert" },
+  { name: "nodemailer", src: "#", level: "expert" },
+  { name: "orama", src: "#", level: "expert" },
+  { name: "ssl", src: "#", level: "expert" },
+  { name: "stripe", src: "#", level: "expert" },
+  { name: "socket", src: "#", level: "expert" },
+  { name: "redis", src: "#", level: "expert" },
+  { name: "rabbitMQ", src: "#", level: "expert" },
+  { name: "passport", src: "#", level: "expert" },
+  { name: "zod / joi", src: "#", level: "expert" },
+  { name: "jwt", src: "#", level: "expert" },
 ];
 
 export const toDos = [
@@ -62,21 +62,21 @@ export const toDos = [
 export const dbTechs = [
   {
     name: "Mongodb",
-    src: "google.com",
+    src: "#",
     level: "expert",
   },
-  { name: "Postgres", src: "google.com", level: "expert" },
-  { name: "Mysql", src: "google.com", level: "expert" },
-  { name: "Sqlite", src: "google.com", level: "expert" },
-  { name: "Mongoose", src: "google.com", level: "expert" },
-  { name: "Prisma", src: "google.com", level: "expert" },
+  { name: "Postgres", src: "#", level: "expert" },
+  { name: "Mysql", src: "#", level: "expert" },
+  { name: "Sqlite", src: "#", level: "expert" },
+  { name: "Mongoose", src: "#", level: "expert" },
+  { name: "Prisma", src: "#", level: "expert" },
 ];
 
 export const devProcessTechs = [
   {
     name: "Git",
-    src: "google.com",
+    src: "#",
     level: "expert",
   },
-  { name: "Edrawmax", src: "google.com", level: "expert" },
+  { name: "Edrawmax", src: "#", level: "expert" },
 ];

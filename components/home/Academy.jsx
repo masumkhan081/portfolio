@@ -25,7 +25,7 @@ export default function Academy() {
   return (
     <div className="w-full">
       <AboutTitle title="Academy" />
-      <ul className="ps-2 py-1">
+      <ul className="p-2">
         {educations.map((eduItem, ind) => {
           return (
             <ListItem

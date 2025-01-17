@@ -1,7 +1,7 @@
 import Github from "@/public/icons/Github";
 import React from "react";
-
 import SKillTitle from "../common/SkillTitle";
+import { isValidUrl } from "@/utils/isValidURL";
 //
 export default function TechnoSkill({ title, list }) {
   const style_level_wise = {
@@ -9,33 +9,34 @@ export default function TechnoSkill({ title, list }) {
     intermediate: "bg-opacity-90",
     begineer: "bg-opacity-70",
   };
-  const style_common = "px-1 rounded bg-dark-brown text-slate-300";
+  const style_common = "px-1 rounded";
 
   return (
     <div className="">
       <SKillTitle SKillTitle={title} />
-      <ul className=" space-y-2  my-3 text-sm ">
+      <div className=" flex gap-0.5 flex-wrap my-3 text-sm ">
         {list.map(({ name, src, level }, ind) => {
           return (
-            <li
+            <span
               key={ind}
-              className=" w-full flex justify-between items-center shadow-b shadow-inner gap-1 rounded-md"
+              className=" w-full flex justify-between items-center  gap-1 rounded-md"
             >
               <span className={style_common + " " + style_level_wise[level]}>
                 {name}
               </span>
-              <a
+              {isValidUrl(src) && <a
                 target="_blank"
                 href={src}
-                className="text-blue-400 font-mono  rounded-lg  py-0"
+                className="text-blue-400 font-mono flex gap-1 items-center rounded-lg  py-0 px-1"
               >
-                <Github clsnames="me-1 w-5 h-5 inline" />
+                <Github clsnames=" w-5 h-5" />
                 code-notes
               </a>
-            </li>
+              }
+            </span>
           );
         })}
-      </ul>
+      </div>
     </div>
   );
 }

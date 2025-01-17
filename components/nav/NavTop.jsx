@@ -22,7 +22,7 @@ export default function Nav() {
     <div
 
       style={{ position: "-webkit-sticky", position: "sticky", top: 0, zIndex: "50" }}
-      className=" bg-slate-100 rounded-md text-pr/600 font-averia font-semibold w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-2.0 py-3 text-1/1  ">
+      className=" shadow-inner bg-slate-100 rounded-md text-pr/600 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-2.0 py-3 text-1/1  ">
       <div className={styLogic()}>
         {navLinks.map((link, key) => {
           return (

@@ -9,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        agud: ["Agu Display", "serif"],
+        anton: ['Anton', 'sans-serif'], // Add the Anton font family
+        jersey: ['Jersey 15', 'serif'], // Add the Jersey 15 font family
+        rubik: ["Rubik Iso"],
+        titan: ["Titan One"],
+        averia: ["Averia Serif Libre"],
+        inter: ["Inter"],
+      },
       spacing: {
         0.125: "0.125rem",
         0.25: "0.25rem",
@@ -65,12 +74,7 @@ module.exports = {
         41.75: "41.75rem",
         "44.0": "44rem",
       },
-      fontFamily: {
-        rubik: ["Rubik Iso"],
-        titan: ["Titan One"],
-        averia: ["Averia Serif Libre"],
-        inter: ["Inter"],
-      },
+
       letterSpacing: {
         "02": "0.2rem",
         "ls-045": "-0.045rem",

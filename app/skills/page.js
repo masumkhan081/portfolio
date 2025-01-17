@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { FaPlus, FaRegStar, FaRegStarHalf, FaStar, FaStarHalfAlt, FaStarOfLife } from "react-icons/fa";
 
 // import { animated, useSpring } from "@react-spring/web";
 import { IoIosArrowDown } from "react-icons/io";
@@ -25,6 +26,7 @@ import PersonalSkill from "../../components/skills/PerSkill";
 import EnhancedTitle from "../../components/common/EnhancedTitle";
 //
 import algoList from "../../data/skills.data/algorithms.data";
+import { MdOutlineStar } from "react-icons/md";
 
 //
 export default function Page() {
@@ -60,7 +62,7 @@ export default function Page() {
         // animate={{ opacity: 1, scale: 1 }}
         // transition={{ duration: 0.5 }}
         // whileHover={{ scale: 1.05 }}
-        className="  px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
+        className="  px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
       >
 
         <EnhancedTitle name={`Programming & Algorithms`} />
@@ -112,7 +114,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
+      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
         <EnhancedTitle name="Development Skills" />
 
         <div className="grid grid-cols-3 gap-3 justify-center">
@@ -122,10 +124,22 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
         <EnhancedTitle name="Technological Skills" />
 
-        <div className=" flex flex-wrap gap-x-2 justify-around sm:gap-y-5 gap-y-2 ">
+        {/* <div className="w-auto mx-auto text-sm font-mono font-light text-teal-700 rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
+          <button title="Proficient" className="border-b border-teal-500 w-fit h-fit relative flex justify-center items-center">
+            <span className="relative flex justify-center items-center">
+              <FaStarOfLife className="  w-[33px] h-[33px] " />
+              <FaStarHalfAlt className="  w-[33px] h-[33px] absolute translate-x-[22px] " />
+              <MdOutlineStar className="  w-[33px] h-[33px] absolute translate-x-[44px] translate-y-[-0px]" />
+             <FaPlus className="  w-[33px] h-[33px] absolute translate-x-[66px] translate-y-[-0px]" />
+              <FaRegStarHalf className="  w-[33px] h-[33px] absolute translate-x-[88px] translate-y-[-0px]" />
+            </span>
+          </button>
+        </div> */}
+
+        <div className=" overflow-x-scroll flex gap-1.0 ">
           <div className="styleTechnoSkill">
             <TechnoSkill title={"Languages"} list={languages} />
           </div>
@@ -146,11 +160,11 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="px-3.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
 
         <EnhancedTitle name="Personal Skills" />
 
-        <PersonalSkill list={personalSkills} />{" "}
+        <PersonalSkill skills={personalSkills} />{" "}
       </motion.div>
     </div>
   );

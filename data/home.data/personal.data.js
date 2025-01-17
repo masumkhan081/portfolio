@@ -9,7 +9,7 @@ const persInfo = [
   },
   { data: "Beanibazar, Sylhet", icon: <AiFillHome /> },
   {
-    data: "Khadim-Shahporan, Sylhet Sadar",
+    data: "Khadimpara, Shahporan, Sylhet Sadar",
     icon: <AiFillHome />,
   },
   {
