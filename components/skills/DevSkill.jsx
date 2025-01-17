@@ -9,7 +9,7 @@ export default function DevSkill({ title, list }) {
     ind === hoverItem ? "opacity-90 translate-x-[-2px] h-2 w-2 text-teal-700" : "text-black h-2 w-2 opacity-50";
 
   return (
-    <motion.div className="sm:col-span-1 col-span-3 p-3 ">
+    <motion.div className="sm:col-span-1 col-span-3 ">
       <span className=" bg-slate-200 text-xs shadow-inner shadow-teal-800 px-2 py-1 rounded-md  font-mono font-light text-slate-900 block text-center">
         {title}
       </span>

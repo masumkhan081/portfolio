@@ -62,11 +62,11 @@ export default function Page() {
         // animate={{ opacity: 1, scale: 1 }}
         // transition={{ duration: 0.5 }}
         // whileHover={{ scale: 1.05 }}
-        className="    w-full sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
+        className="sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
       >
         <EnhancedTitle name={`Programming & Algorithms`} />
         <div>
-          <div className=" flex gap-3 sm:flex-row flex-col sm:justify-start text-sm font-mono font-light text-teal-700 rounded-sm  ">
+          <div className=" flex gap-3 flex-row justify-start text-sm font-mono font-light text-teal-700 rounded-sm  ">
             {Object.keys(algoList).map((tab, ind) => {
               return (
                 <button
@@ -84,12 +84,12 @@ export default function Page() {
             {Object.keys(algoList[currentView]).map((item, ind) => {
               return (
                 <div
-                  className="font-mono rounded-3xl border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
+                  className="font-mono sm:rounded-3xl rounded-md border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
                   key={ind}
                 >
                   <button
                     onClick={() => handleSubView(item)}
-                    className="px-2 py-0.125 bg-slate-300 text-teal-800 rounded-3xl shadow-md font-bold w-fit flex gap-2 justify-center items-center"
+                    className="px-2 py-0.125 bg-slate-300 text-teal-800 sm:rounded-3xl rounded-md shadow-md font-bold w-fit flex gap-2 justify-center items-center"
                   >
                     {item}
                     <span className="rounded-full px-2 bg-teal-800 text-yellow-100 font-normal">
@@ -114,7 +114,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="    sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
+      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
         <EnhancedTitle name="Development Skills" />
 
         <div className="grid grid-cols-3 gap-3 justify-center">
@@ -124,7 +124,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
         <EnhancedTitle name="Technological Skills" />
 
         <div className=" overflow-x-scroll flex gap-1.0 ">
@@ -148,7 +148,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
+      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
 
         <EnhancedTitle name="Personal Skills" />
 
