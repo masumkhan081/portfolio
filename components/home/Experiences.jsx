@@ -12,7 +12,7 @@ export default function Experiences() {
       <ul className="ps-2 py-1 flex flex-col justify-center sm:items-start items-center">
         {experiences.map((workExperience, ind) => {
           return (
-            <ul className="py-1">
+            <ul className="py-1" key={ind}>
               <li key={ind} className="flex flex-wrap gap-2 text-0.75/1.25">
                 <span className="font-semibold wn">
                   {workExperience.title}

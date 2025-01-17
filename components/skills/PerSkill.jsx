@@ -16,6 +16,7 @@ export default function PersonalSkill({ skills }) {
     <ul className="py-3.0 space-y-2  first-letter: mx-auto font-mono text-teal-950 text-xl font-semibold opacity-85">
       {skills.map((skill, index) => (
         <li
+        key={index}
           className="flex gap-2 items-center"
           id={`li${index}`}
           onMouseEnter={() => onHover(`li${index}`, "ENTER")}

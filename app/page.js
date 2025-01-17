@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import MK from "../public/images/mk-2.png";
 import Phone from "../public/icons/Phone";
