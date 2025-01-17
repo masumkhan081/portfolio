@@ -41,8 +41,8 @@ export default function Page() {
 
   const tabSty = (btnText) =>
     currentView === btnText
-      ? "bg-slate-200 text-xs border-b border-slate-600 shadow-inner shadow-teal-800 px-2 py-1 rounded-md "
-      : "bg-slate-200 text-xs shadow-inner shadow-teal-800 px-2 py-1 rounded-md ";
+      ? "bg-teal-800 text-xs text-slate-300 px-2 py-1 rounded-md border-x-4 border-teal-950 "
+      : "bg-teal-800 text-xs text-slate-300 px-2 py-1 rounded-md ";
 
   const subViewSty = (item) => (item === currentSubView ? "block  " : "hidden");
 
@@ -53,7 +53,7 @@ export default function Page() {
     item === currentSubView ? setCurrentSubView("") : setCurrentSubView(item);
 
   return (
-    <div className="flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto sm:p-[90px] p-[20px] bg-slate-100">
+    <div className="brdr flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto md:p-[90px] p-[20px] bg-slate-100">
       {/*                      
             Programming & Algorithms              
                                          */}
@@ -62,59 +62,59 @@ export default function Page() {
         // animate={{ opacity: 1, scale: 1 }}
         // transition={{ duration: 0.5 }}
         // whileHover={{ scale: 1.05 }}
-        className="  px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
+        className=" brdr  w-full sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
       >
-
         <EnhancedTitle name={`Programming & Algorithms`} />
-
-        <div className="w-auto mx-auto text-sm font-mono font-light text-teal-700 rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
-          {Object.keys(algoList).map((tab, ind) => {
-            return (
-              <button
-                key={ind}
-                className={tabSty(tab)}
-                onClick={() => setCurrentView(tab)}
-              >
-                {tab}
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="my-4 flex flex-col gap-2 ">
-          {Object.keys(algoList[currentView]).map((item, ind) => {
-            return (
-              <div
-                className="font-mono rounded-3xl border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
-                key={ind}
-              >
+        <div>
+          <div className=" flex gap-3 sm:flex-row flex-col sm:justify-start text-sm font-mono font-light text-teal-700 rounded-sm  ">
+            {Object.keys(algoList).map((tab, ind) => {
+              return (
                 <button
-                  onClick={() => handleSubView(item)}
-                  className="px-2 py-0.125 bg-slate-300 text-teal-800 rounded-3xl shadow-md font-bold w-fit flex gap-2 justify-center items-center"
+                  key={ind}
+                  className={tabSty(tab)}
+                  onClick={() => setCurrentView(tab)}
                 >
-                  {item}
-                  <span className="rounded-full px-2 bg-teal-800 text-yellow-100 font-normal">
-                    {algoList?.[currentView]?.[item]?.length}
-                  </span>
-
-                  <IoIosArrowDown className={activeSty(item)} />
+                  {tab}
                 </button>
-                <ul className={`${subViewSty(item)} flex flex-col gap-1 ps-1.0`}>
-                  {algoList?.[currentView]?.[currentSubView]?.map((itm, i) => {
-                    return (
-                      <li className="" key={i}>
-                        {itm}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
+
+          <div className="py-2 flex flex-col gap-2 ">
+            {Object.keys(algoList[currentView]).map((item, ind) => {
+              return (
+                <div
+                  className="font-mono rounded-3xl border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
+                  key={ind}
+                >
+                  <button
+                    onClick={() => handleSubView(item)}
+                    className="px-2 py-0.125 bg-slate-300 text-teal-800 rounded-3xl shadow-md font-bold w-fit flex gap-2 justify-center items-center"
+                  >
+                    {item}
+                    <span className="rounded-full px-2 bg-teal-800 text-yellow-100 font-normal">
+                      {algoList?.[currentView]?.[item]?.length}
+                    </span>
+
+                    <IoIosArrowDown className={activeSty(item)} />
+                  </button>
+                  <ul className={`${subViewSty(item)} flex flex-col gap-1 ps-1.0`}>
+                    {algoList?.[currentView]?.[currentSubView]?.map((itm, i) => {
+                      return (
+                        <li className="" key={i}>
+                          {itm}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </motion.div>
 
-      <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
+      <motion.div className="brdr   sm:py-1.0 py-1.0 flex flex-col gap-[50px] h-auto">
         <EnhancedTitle name="Development Skills" />
 
         <div className="grid grid-cols-3 gap-3 justify-center">
@@ -126,18 +126,6 @@ export default function Page() {
 
       <motion.div className="px-2.0  sm:py-1.0 py-1.0 flex flex-col gap-[60px] h-auto">
         <EnhancedTitle name="Technological Skills" />
-
-        {/* <div className="w-auto mx-auto text-sm font-mono font-light text-teal-700 rounded-sm flex gap-3 sm:flex-row flex-col sm:justify-center mt-4 ">
-          <button title="Proficient" className="border-b border-teal-500 w-fit h-fit relative flex justify-center items-center">
-            <span className="relative flex justify-center items-center">
-              <FaStarOfLife className="  w-[33px] h-[33px] " />
-              <FaStarHalfAlt className="  w-[33px] h-[33px] absolute translate-x-[22px] " />
-              <MdOutlineStar className="  w-[33px] h-[33px] absolute translate-x-[44px] translate-y-[-0px]" />
-             <FaPlus className="  w-[33px] h-[33px] absolute translate-x-[66px] translate-y-[-0px]" />
-              <FaRegStarHalf className="  w-[33px] h-[33px] absolute translate-x-[88px] translate-y-[-0px]" />
-            </span>
-          </button>
-        </div> */}
 
         <div className=" overflow-x-scroll flex gap-1.0 ">
           <div className="styleTechnoSkill">
