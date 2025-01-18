@@ -24,7 +24,6 @@ export default function Home() {
   return (
     <div className="flex-grow flex flex-col gap-4 rounded-sm bg-slate-100  ">
 
-
       <PersonalInfo />
 
       <div

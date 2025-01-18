@@ -1,7 +1,7 @@
 import Github from "@/public/icons/Github";
 import React from "react";
 import SKillTitle from "../common/SkillTitle";
-import { isValidUrl } from "@/utils/isValidURL";
+import isValidUrl from "@/utils/isValidURL";
 //
 export default function TechnoSkill({ title, list }) {
   const style_level_wise = {

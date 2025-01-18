@@ -40,8 +40,8 @@ const navLinks = [
   {
     text: "Resume",
     icon: <FaCloudDownloadAlt className="icn_nav" />,
-    href: "http://localhost:3000/Resume-mern-stack-masum-khan.pdf",
-    download: "Resume-mern-stack-masum-khan.pdf",
+    href: "http://localhost:3000/masum.khan.resume.pdf",
+    download: "masum.khan.resume.pdf",
   },
 ];
 export default navLinks;

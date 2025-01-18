@@ -19,115 +19,121 @@ export const projectList = [
     summary: "Personal detail, acquired skills, live & on-going projects with",
     versions: [
       {
-        version: "1",
+        version: "Bootstrap version",
         deploy_link: "https://masumk081.web.app",
-        github_link: "https://github.com/masumkhan081/masumkhan081.github.io",
         yt_link: "#",
         type: mapProjectTabs.fe,
+        fe_github_link: "https://github.com/masumkhan081/masumkhan081.github.io",
         tools: ["Bootstrap-5"],
       },
       {
-        version: "2",
-        deploy_link: "https://v-2-mk.vercel.app",
-        github_link: "https://github.com/masumkhan081/v-2-portfolio",
+        version: "React-Next version",
+        deploy_link: "https://masumkhan.vercel.app",
         yt_link: "",
         type: mapProjectTabs.fe,
-        tools: ["Next", "Tailwind CSS", "daisyUI", "React-spring"],
+        fe_github_link: "https://github.com/masumkhan081/portfolio",
+        tools: ["Next", "Tailwind"],
       },
     ],
   },
   {
-    name: "Task-Distribution",
-    summary:
-      "To assign, mark, and manage tasks in-between project manager -> team lead -> team member including the with option to invite a new employee over email with a defined role (jwt token) as a user of this system. An admin add/assign task for managers, a project manager may assign task to any team-lead, a team lead can assign task to his team- members ",
-
+    name: "Bid-Sphere",
+    summary: "Online auction platform involving seller, bidder, and admin roles",
     versions: [
       {
         version: "1",
-        deploy_link: "https://task-collaborator.onrender.com",
-        github_link: "https://github.com/masumkhan081/task-collaborator",
+        deploy_link: "",
         yt_link: "",
         type: mapProjectTabs.fs,
+        fe_github_link: "https://github.com/masumkhan081/auction-platform-frontend",
+        be_github_link: "https://github.com/masumkhan081/auction-platform-backend",
         tools: [
-          "MongoDB atlas",
-          "mongoose",
-          "Express",
-          "J-W-T",
-          "Passport",
-          "Nodmailer",
-          "EJS, Bootstrap",
+          "Express", "JWT", "MongoDB", "mongoose", "Node-Cron", "Moment-Timezone",
+          "Nodmailer", "Next", "React"
         ],
       },
-
-    ],
-  },
-  {
-    name: "Resume Builder",
-    summary:
-      "Online resume builder for soft. developers. Takes technical skills, academic records, experiences etc to finally make a resume out of it. Started with the purpose of implementing firebase auth, context-api, react hoc and firestore in a meaningful way.",
-
-    versions: [
-      {
-        version: "1",
-        deploy_link: "https://resume-builder-081.netlify.app",
-        github_link: "https://github.com/masumkhan081/resume-builder",
-        yt_link: "",
-        type: mapProjectTabs.fs,
-        tools: [
-          "React-bootstrap",
-          "React-spring",
-          "Firestore",
-          "Firebase-auth",
-          "React-router",
-          "React-pdf",
-          "React-icons",
-        ],
-      },
-
     ],
   },
   {
     name: "Pharmacy Mgmt Syst",
     summary:
-      "An Info system of drugs, generics, groups, manufacturers with tabular view of data and actions on it to be transformed to prescription system in future.",
-
+      "Take care of storefronts and managerial aspects of a pharmacy(multi - role)",
     versions: [
       {
         version: "1",
-        deploy_link: "https://drugs-info.onrender.com",
-        github_link: "https://github.com/masumkhan081/drugs.info",
+        deploy_link: "",
         yt_link: "",
         type: mapProjectTabs.fs,
+        fe_github_link: "https://github.com/masumkhan081/pharmacy-mgmt-frontend",
+        be_github_link: "https://github.com/masumkhan081/pharmacy-mgmt-backend",
         tools: [
+          "Typescript",
+          "React",
+          "Redux",
           "Express",
-          "MongoDB atlas",
+          "Mongodb",
           "Mongoose",
-          "BS-5",
-          "ejs",
-          "Fetch api",
         ],
-      },
+      }
     ],
   },
   {
     name: "E-commerce",
     summary:
-      "An Info system of drugs, generics, groups, manufacturers with tabular view of data and actions on it to be transformed to prescription system in future.",
-
+      "Vendor - centric online marketplace.",
     versions: [
       {
         version: "1",
-        deploy_link: "https://drugs-info.onrender.com",
-        github_link: "https://github.com/masumkhan081/drugs.info",
+        deploy_link: "",
         yt_link: "",
         type: mapProjectTabs.be,
+        be_github_link: "https://github.com/masumkhan081/e-com-backend",
+        fe_github_link: "",
         tools: [
           "Express",
-          "MongoDB atlas",
+          "MongoDB",
           "Mongoose",
-          "BS-5",
-          "ejs",
-          "Fetch api",
+          "Typescript", "Zod"
+        ],
+      },
+    ],
+  },
+  {
+    name: "TaskMate",
+    summary:
+      "Task assignment, progress, and distribution system for developers & teams.",
+    versions: [
+      {
+        version: "1",
+        deploy_link: "",
+        yt_link: "",
+        type: mapProjectTabs.fs,
+        fe_github_link: "",
+        be_github_link: "https://github.com/masumkhan081/taskmate-backend",
+        tools: [
+          "Nest", "PostgreSQL", "Prisma", "Next", "Tailwind"],
+      },
+    ],
+  },
+  /* 
+DocRx[React, Nest, Postgres, Prisma, TypeScript]
+Ongoing personal SaaS project; end - user: Doctors
+"To assign, mark, and manage tasks in-between project manager -> team lead -> team member including the with option to invite a new employee over email with a defined role (jwt token) as a user of this system. An admin add/assign task for managers, a project manager may assign task to any team-lead, a team lead can assign task to his team- members ",
+*/
+  {
+    name: "Resume Builder",
+    summary:
+      "Online resume builder for soft. developers. Takes technical skills, academic records, experiences etc to finally make a resume out of it. Started with the purpose of implementing firebase auth, context-api, react hoc and firestore in a meaningful way.",
+    versions: [
+      {
+        version: "1",
+        deploy_link: "",
+        yt_link: "",
+        type: mapProjectTabs.fs,
+        fe_github_link: "https://github.com/masumkhan081/resume-frontend",
+        be_github_link: "https://github.com/masumkhan081/resume-backend",
+        tools: [
+          "Express", "TS", "Next", "Passport", "MongoDB", "React-PDF"
         ],
       },
     ],

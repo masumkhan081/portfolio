@@ -6,6 +6,9 @@ import YT2 from "../../public/icons/YT2";
 import CustomLink from "../common/CustomLink";
 import EnhancedTitle from "../common/EnhancedTitle";
 import { motion } from "framer-motion";
+import ProjectSectionTitle from "./ProjectSectionTitle";
+import isValidUrl from "@/utils/isValidURL";
+import ToolBadge from "./ToolBadge";
 
 export default function Project({ name, versions, summary }) {
 
@@ -19,56 +22,51 @@ export default function Project({ name, versions, summary }) {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
 
-      className=" h-fit md:w-2/5 w-auto md:mx-auto mx-4 rounded-md  pb-2  bg-gradient-to-b from-transparent to-slate-300"
+      className="pb-1.0 h-fit md:w-2/5 w-auto font-mono md:mx-auto  rounded-md bg-gradient-to-b from-transparent to-slate-300"
     >
-
 
       <EnhancedTitle name={name} />
 
-
-      <div className="mt-[40px] mb-4">
-        <span className=" me-2 block font-semibold text-teal-700 font-averia text-md  w-fit  rounded-r-md px-2 ">
-          Summary
-        </span>
-        <div className="text-slate-800 px-3 font-titan"> {summary}</div>
+      <div>
+        <ProjectSectionTitle txt={"Summary"} />
+        <div className="ps-1.0 py-2 text-slate-800 font-mono"> {summary}</div>
       </div>
 
-      <div className="flex  flex-col justify-center w-full  gap-5 mb-3 ">
+      <div className="flex flex-col justify-center w-full  gap-4 ">
         {versions.map((ver, ind) => (
           <div key={ind} className="">
             {/* className="border-l-2 border-teal-900 rounded-s-md pb-1 px-2" */}
 
             {versions.length > 1 && (
-              <span className=" me-2 block font-semibold text-teal-700 font-averia text-md  w-fit  rounded-r-md px-2 ">
-                Version-{ver.version}
-              </span>
+              <ProjectSectionTitle txt={ver.version} />
             )}
 
-            <div className="flex flex-row flex-wrap justify-center gap-5 text-sm text-blue-950">
+            <div className="ps-1.0 mt-1 flex flex-row flex-wrap justify-start gap-5 text-sm text-blue-950">
               <CustomLink
-                txt="live"
+                txt={ver?.fe_github_link ? "frontend" : "No frontend"}
+                href={ver?.fe_github_link}
+                icon={<Github clsnames="me-1 w-5 h-5 inline" />}
+              />
+
+              <CustomLink
+                txt={ver?.be_github_link ? "backend" : "No backend"}
+                href={ver?.be_github_link}
+                icon={<Github clsnames="me-1 w-5 h-5 inline" />}
+              />
+              <CustomLink
+                txt={isValidUrl(ver.deploy_link) ? "live" : "Not live"}
                 href={ver.deploy_link}
                 icon={<LinkIcon clsnames="me-1 w-5 h-5 inline" />}
               />
               <CustomLink
-                txt="Github src"
-                href={ver.github_link}
-                icon={<Github clsnames="me-1 w-5 h-5 inline" />}
-              />
-              <CustomLink
-                txt="Brief"
-                href={"#"}
-                icon={<YT2 clsnames="   me-1 w-5 inline text-red-600 " />}
+                txt={isValidUrl(ver.yt_link) ? "Brief" : "No brief"}
+                href={ver.yt_link}
+                icon={<YT2 clsnames="me-1 w-5 inline text-red-600 " />}
               />
             </div>
-            <div className="flex flex-row justify-center gap-3 w-full flex-wrap mt-3 px-2">
+            <div className="ps-1.0 flex flex-row justify-start gap-3 w-full flex-wrap mt-3">
               {ver.tools.map((tool, j) => (
-                <span
-                  key={j}
-                  className="  drop-shadow-md shadow-inner shadow-slate-400 text-slate-900 h-5 text-sm font-sans rounded-lg px-2 py-0"
-                >
-                  {tool}
-                </span>
+                <ToolBadge key={j} txt={tool} />
               ))}
             </div>
             {/*  */}
