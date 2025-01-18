@@ -9,7 +9,7 @@ export default function Experiences() {
   return (
     <div className="w-full">
       <AboutTitle title="Experiences" />
-      <ul className="ps-2 py-1 flex flex-col justify-center sm:items-start items-center">
+      <ul className="p-2 flex flex-col justify-center sm:items-start items-center">
         {experiences.map((workExperience, ind) => {
           return (
             <ul className="py-1" key={ind}>
