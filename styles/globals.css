@@ -44,10 +44,6 @@
    @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
  }
 
- .btn_nav {
-   @apply bg-orange-800 text-wh text-center px-3 py-1 rounded-md text-sm font-averia;
- }
-
  .icn_socials {
    @apply inline w-8 h-8 text-dark-green bg-slate-100 border-teal-800 border-b rounded-md p-1;
  }
@@ -61,7 +57,7 @@
  }
 
  .nav_link {
-   @apply flex gap-1 justify-center items-center text-center px-2 font-sans text-sm sm:w-fit w-full text-teal-800;
+   @apply flex gap-1 sm:justify-center justify-start items-center text-center px-2 font-sans text-sm sm:w-fit w-full text-teal-800;
  }
 
  .styleTechnoSkill {

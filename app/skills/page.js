@@ -45,13 +45,13 @@ export default function Page() {
         // animate={{ opacity: 1, scale: 1 }}
         // transition={{ duration: 0.5 }}
         // whileHover={{ scale: 1.05 }}
-        className=" sm:py-1.0 py-1.0 flex flex-col gap-[40px] h-auto"
+        className=" sm:py-1.0 py-1.0 flex flex-col  sm:gap-[55px] gap-[40px]  h-auto"
       >
         <EnhancedTitle name={`Programming & Algorithms`} />
         <CodingSkill />
       </motion.div>
 
-      <motion.div className=" sm:py-1.0 py-1.0 flex flex-col gap-[55px] h-auto">
+      <motion.div className=" sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Development Skills" />
         <div className="grid grid-cols-3 gap-3 justify-center">
           <DevSkill title={"fornt-end skill"} list={fronendSKills} />
@@ -60,7 +60,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col gap-[55px] h-auto">
+      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Technological Skills" />
         <div className=" overflow-x-scroll flex gap-1.0 md:justify-start justify-between ">
           <TechnoSkill title={"Languages"} list={languages} />
@@ -71,7 +71,7 @@ export default function Page() {
         </div>
       </motion.div>
 
-      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col gap-[55px] h-auto">
+      <motion.div className="  sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Personal Skills" />
         <PersonalSkill skills={personalSkills} />
       </motion.div>

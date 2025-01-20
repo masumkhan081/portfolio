@@ -15,14 +15,14 @@ export default function Nav() {
 
   const styLogic = () =>
     menuFolded
-      ? "sm:flex sm:flex-row flex-col hidden gap-4 justify-center items-center text-orange-800 "
-      : "flex sm:flex-row flex-col rounded-md gap-2 px-4 ";
+      ? " sm:flex sm:flex-row flex-col hidden gap-4 justify-center items-center text-orange-800 "
+      : " flex sm:flex-row flex-col gap-2 px-4 ";
 
   return (
     <div
 
       style={{ position: "-webkit-sticky", position: "sticky", top: 0, zIndex: "50" }}
-      className=" shadow-inner bg-slate-100 rounded-md text-pr/600 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-2.0 py-3 text-1/1  ">
+      className=" sm:bg-slate-100 bg-slate-300 rounded-b-xl text-pr/600 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-1.0 sm:py-3 py-2 text-1/1  ">
       <div className={styLogic()}>
         {navLinks.map((link, key) => {
           return (
@@ -37,10 +37,10 @@ export default function Nav() {
           );
         })}
       </div>
-      <div className="sm:hidden flex justify-end rounded-full border-2 p-1 bg-orange-950 border-slate-400 ">
+      <div className="sm:hidden flex justify-end rounded-full py-1 shadow-inner shadow-slate-400">
         <Button
-          style={"btn_nav"}
-          icon={menuFolded ? <AiOutlineMenu /> : <AiOutlineClose />}
+          style={"text-slate-800 text-center px-3 py-1 rounded-md text-sm font-extrabold"}
+          icon={menuFolded ? <AiOutlineMenu className="h-5 w-5" /> : <AiOutlineClose className="h-5 w-5" />}
           onClick={() => setMenuFolded(!menuFolded)}
         />
       </div>
