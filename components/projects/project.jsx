@@ -12,7 +12,6 @@ import ToolBadge from "./ToolBadge";
 
 export default function Project({ name, versions, summary }) {
 
-
   return (
     // bg-gradient-to-t from-cyan-800 shadow-teal-500
     <motion.div
@@ -29,7 +28,7 @@ export default function Project({ name, versions, summary }) {
 
       <div>
         <ProjectSectionTitle txt={"Summary"} />
-        <div className="ps-1.0 py-2 text-slate-800 font-mono"> {summary}</div>
+        <div className="ps-1.0 pe-2 py-2 text-slate-800 font-mono"> {summary}</div>
       </div>
 
       <div className="flex flex-col justify-center w-full  gap-4 ">

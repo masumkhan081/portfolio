@@ -13,7 +13,7 @@ export default function PersonalSkill({ skills }) {
   }
 
   return (
-    <ul className="py-3.0 space-y-2  first-letter: mx-auto font-mono text-teal-950 text-xl font-semibold opacity-85">
+    <ul className=" px-2 space-y-2  mx-auto font-mono text-teal-950 text-xl font-semibold opacity-85">
       {skills.map((skill, index) => (
         <li
         key={index}

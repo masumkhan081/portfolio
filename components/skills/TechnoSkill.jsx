@@ -12,7 +12,7 @@ export default function TechnoSkill({ title, list }) {
   const style_common = "px-1 rounded";
 
   return (
-    <div className="">
+    <div className="styleTechnoSkill">
       <SKillTitle SKillTitle={title} />
       <div className=" flex gap-0.5 flex-wrap my-3 text-sm ">
         {list.map(({ name, src, level }, ind) => {
