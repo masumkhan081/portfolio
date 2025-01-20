@@ -5,11 +5,11 @@
  @tailwind components;
  @tailwind utilities;
 
- :root {
+ /* :root {
    --foreground-rgb: 0, 0, 0;
    --background-start-rgb: 214, 219, 220;
    --background-end-rgb: 255, 255, 255;
- }
+ } */
 
  ::-webkit-scrollbar {
    width: 0.35rem;
@@ -18,7 +18,7 @@
  }
 
  ::-webkit-scrollbar-track-piece {
-   background: #ffffff;
+   background: #f8f5f5;
  }
 
  ::-webkit-scrollbar-button {
@@ -34,7 +34,7 @@
  }
 
  body {
-   background-color: rgb(127, 255, 212);
+   background-color: rgb(143, 146, 145);
    margin: 0;
    padding: 0;
    font-family: Arial, sans-serif;
