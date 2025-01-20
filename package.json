@@ -9,8 +9,7 @@
     "lint": "next lint",
     "git": "git add . && git commit -m `commited` && git push",
     "format": "prettier --write \"app/**/*.{js,jsx}\" \"test/**/*.{js,jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
