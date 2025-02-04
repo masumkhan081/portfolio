@@ -52,6 +52,7 @@ export default function Project({ name, versions, summary }) {
                 href={ver?.be_github_link}
                 icon={<Github clsnames="me-1 w-5 h-5 inline" />}
               />
+             
               <CustomLink
                 txt={isValidUrl(ver.deploy_link) ? "live" : "Not live"}
                 href={ver.deploy_link}

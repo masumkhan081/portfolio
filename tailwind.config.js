@@ -74,7 +74,6 @@ module.exports = {
         41.75: "41.75rem",
         "44.0": "44rem",
       },
-
       letterSpacing: {
         "02": "0.2rem",
         "ls-045": "-0.045rem",
