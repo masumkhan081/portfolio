@@ -66,16 +66,16 @@ function Uhunt_Stats() {
           <div className="flex flex-col gap-2">
             <label
               htmlFor="modal-uhunt"
-              className=" rounded-md text-center border-0 text-sm-lg btn-error absolute right-2 top-2 w-1/4 font-bold bg-slate-800 text-slate-100"
+              className=" rounded-md text-center border-0 text-sm-lg btn-error absolute right-2 top-2 w-1/4 font-bold bg-content-primary text-content-on-brand"
             >
               C L O S E
             </label>
-            <h3 className=" w-1/3 px-1 text-sm-lg rounded-md absolute left-2 top-2 text-center text-slate-800">
+            <h3 className=" w-1/3 px-1 text-sm-lg rounded-md absolute left-2 top-2 text-center text-content-primary">
               Uhunt Stats
             </h3>
           </div>
 
-          <div className="  container bg-slate-400">
+          <div className="  container bg-surface-subtle">
             <Image
               className="  w-fit   h-fit mt-3"
               src={Uhunt}
@@ -85,7 +85,7 @@ function Uhunt_Stats() {
           <div className="modal-action ">
             <label
               htmlFor="modal-uhunt"
-              className="btn btn-square bg-slate-100 btn-outline btn-sm w-full"
+              className="btn btn-square bg-surface btn-outline btn-sm w-full"
             >
               Close
             </label>
@@ -102,7 +102,7 @@ function Cl_Algo_Modal() {
       <div className="modal modal-bottom sm:modal-middle ">
         <div className="modal-box py-0 ">
           <div className="flex flex-row justify-between gap-2 my-2 ">
-            <h3 className="font-bold text-lg text-center text-slate-500">
+            <h3 className="font-bold text-lg text-center text-content-muted">
               Classic Algorithms{" "}
               <span className="badge bg-success bg-opacity-5 border-0 text-green-500">
                 Click On Category to Expand{" "}
@@ -116,11 +116,11 @@ function Cl_Algo_Modal() {
             </label>
           </div>
 
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Backtracking
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 4
               </span>
             </div>
@@ -135,11 +135,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Dynamic Algorithm
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 20
               </span>
             </div>
@@ -172,11 +172,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Graph & Greedy Algorithms{" "}
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 8
               </span>
             </div>
@@ -197,11 +197,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Number Theory
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 22
               </span>
             </div>
@@ -236,11 +236,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Pattern Matching
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 6
               </span>
             </div>
@@ -259,11 +259,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Recursion
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 10
               </span>
             </div>
@@ -286,11 +286,11 @@ function Cl_Algo_Modal() {
               </ul>
             </div>
           </div>
-          <div className="collapse bg-slate-100 py-0 ">
+          <div className="collapse bg-surface py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
+            <div className="collapse-title text-base font-bold text-content-brand bg-surface-subtle rounded-lg border-t-2 border-brand-subtle">
               Searching And Sorting
-              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
+              <span className="ms-3 rounded-lg bg-brand-dark text-brand-muted px-2">
                 7
               </span>
             </div>
@@ -313,7 +313,7 @@ function Cl_Algo_Modal() {
           <div className="modal-action ">
             <label
               htmlFor="modal-classicalgo"
-              className="btn btn-square bg-slate-100 btn-outline btn-sm w-full"
+              className="btn btn-square bg-surface btn-outline btn-sm w-full"
             >
               Close
             </label>

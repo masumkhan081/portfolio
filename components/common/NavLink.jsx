@@ -7,9 +7,7 @@ export default function NavLink({ href, txt, icon, active, download }) {
       href={href}
       download={download}
       className={
-        active
-          ? ` nav_link shadow shadow-slate-400 rounded-md`
-          : `nav_link`
+        active ? ` nav_link shadow shadow-border rounded-md` : `nav_link`
       }
     >
       <span className="text-opacity-50">{icon}</span>

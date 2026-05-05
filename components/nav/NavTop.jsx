@@ -20,8 +20,14 @@ export default function Nav() {
 
   return (
     <div
-      style={{ position: "-webkit-sticky", position: "sticky", top: 0, zIndex: "50" }}
-      className="bg-slate-200/80 backdrop-blur-md border-b border-slate-300 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-1.0 sm:py-3 py-2">
+      style={{
+        position: "-webkit-sticky",
+        position: "sticky",
+        top: 0,
+        zIndex: "50",
+      }}
+      className="bg-surface-page/80 backdrop-blur-md border-b border-border w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-1.0 sm:py-3 py-2"
+    >
       <div className={styLogic()}>
         {navLinks.map((link, key) => {
           return (
@@ -36,10 +42,18 @@ export default function Nav() {
           );
         })}
       </div>
-      <div className="sm:hidden flex justify-end rounded-full py-1 shadow-inner shadow-slate-400">
+      <div className="sm:hidden flex justify-end rounded-full py-1 shadow-inner shadow-border">
         <Button
-          style={"text-slate-800 text-center px-3 py-1 rounded-md text-sm font-extrabold"}
-          icon={menuFolded ? <AiOutlineMenu className="h-5 w-5" /> : <AiOutlineClose className="h-5 w-5" />}
+          style={
+            "text-content-primary text-center px-3 py-1 rounded-md text-sm font-extrabold"
+          }
+          icon={
+            menuFolded ? (
+              <AiOutlineMenu className="h-5 w-5" />
+            ) : (
+              <AiOutlineClose className="h-5 w-5" />
+            )
+          }
           onClick={() => setMenuFolded(!menuFolded)}
         />
       </div>

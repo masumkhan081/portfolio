@@ -27,7 +27,7 @@ export default function Modal({ visible, click }) {
   return (
     <div className="nav_drop_down  " ref={dropdownRef}>
       <button
-        className="px-4 py-1 rounded-lg bg-slate-300 border-2 border-orange-900"
+        className="px-4 py-1 rounded-lg bg-surface-subtle border border-border"
         onClick={() => toggleDropdown()}
       >
         X

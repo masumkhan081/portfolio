@@ -35,12 +35,12 @@ export default function Page() {
 
   const sty_btn_tab = (tab) =>
     "shadow border rounded-md px-2 py-1 text-sm " +
-    (currentView === tab ? "bg-slate-300 " : "");
+    (currentView === tab ? "bg-surface-subtle " : "");
 
   //
   return (
     <div
-      className=" flex flex-col items-center  gap-1.0 bg-slate-100 
+      className=" flex flex-col items-center  gap-1.0 bg-surface 
     sm:py-[60px] md:py-[90px] py-[55px] md:p-[60px] p-[20px]"
     >
       <div className=" flex gap-2 flex-wrap wn justify-center w-fit rounded-md">

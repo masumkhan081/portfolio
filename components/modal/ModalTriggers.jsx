@@ -10,12 +10,8 @@ export default function ModalTriggers() {
   const [selected, setSelected] = useState("");
 
   return (
-    <div className="border-2 bg-slate-400 p-4 flex justify-center">
-      <Button
-        onClick={() => setModal(!modal)}
-        txt="test-me !"
-        style="bbg-teal-500 text-orange-400g"
-      />
+    <div className="border bg-surface-subtle p-4 flex justify-center">
+      <Button onClick={() => setModal(!modal)} txt="test-me !" style="" />
       <span>{JSON.stringify(modal)}</span>
       {modal && <Modal visible={modal} click={(bool) => setModal(bool)} />}
 

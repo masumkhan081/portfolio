@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-inter)', 'sans-serif'],
-        mono: ['var(--font-mono)', 'monospace'],
+        sans: ["var(--font-inter)", "sans-serif"],
+        mono: ["var(--font-mono)", "monospace"],
       },
       spacing: {
         0.125: "0.125rem",
@@ -99,27 +98,29 @@ module.exports = {
       colors: {
         /* Semantic design tokens — use these instead of raw slate/teal */
         brand: {
-          DEFAULT: 'var(--color-brand)',
-          dark: 'var(--color-brand-dark)',
-          subtle: 'var(--color-brand-subtle)',
-          muted: 'var(--color-brand-muted)',
+          DEFAULT: "var(--color-brand)",
+          dark: "var(--color-brand-dark)",
+          subtle: "var(--color-brand-subtle)",
+          muted: "var(--color-brand-muted)",
         },
         surface: {
-          page: 'var(--color-bg-page)',
-          DEFAULT: 'var(--color-bg-surface)',
-          subtle: 'var(--color-bg-subtle)',
-          raised: 'var(--color-bg-raised)',
+          page: "var(--color-bg-page)",
+          DEFAULT: "var(--color-bg-surface)",
+          subtle: "var(--color-bg-subtle)",
+          raised: "var(--color-bg-raised)",
         },
         border: {
-          DEFAULT: 'var(--color-border)',
-          brand: 'var(--color-border-brand)',
+          DEFAULT: "var(--color-border)",
+          brand: "var(--color-border-brand)",
         },
         content: {
-          primary: 'var(--color-text-primary)',
-          secondary: 'var(--color-text-secondary)',
-          muted: 'var(--color-text-muted)',
-          brand: 'var(--color-text-brand)',
-          'on-brand': 'var(--color-text-on-brand)',
+          primary: "var(--color-text-primary)",
+          secondary: "var(--color-text-secondary)",
+          muted: "var(--color-text-muted)",
+          faint: "var(--color-text-faint)",
+          brand: "var(--color-text-brand)",
+          "brand-dark": "var(--color-text-brand-dark)",
+          "on-brand": "var(--color-text-on-brand)",
         },
         /* Legacy raw palette — kept for backward compat, migrate away from these */
         "dark-green": "#05201F",

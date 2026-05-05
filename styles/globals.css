@@ -24,7 +24,9 @@
     --color-text-primary: theme('colors.slate.800');
     --color-text-secondary: theme('colors.slate.600');
     --color-text-muted: theme('colors.slate.500');
+    --color-text-faint: theme('colors.slate.400');
     --color-text-brand: theme('colors.teal.700');
+    --color-text-brand-dark: theme('colors.teal.800');
     --color-text-on-brand: theme('colors.slate.100');
   }
 
@@ -53,7 +55,7 @@
 
   small,
   .small-text {
-    @apply font-sans text-[14px] text-slate-500;
+    @apply font-sans text-[14px] text-content-muted;
   }
 
   code,
@@ -90,11 +92,11 @@
 }
 
 .icn_socials {
-  @apply inline w-8 h-8 text-dark-green bg-slate-100 border-teal-800 border-b rounded-md p-1;
+  @apply inline w-8 h-8 text-content-brand-dark bg-surface border-brand-dark border-b rounded-md p-1;
 }
 
 .icn_socials_sm {
-  @apply inline w-7 h-7 text-dark-green bg-slate-100 border-teal-800 border-b rounded-md p-1;
+  @apply inline w-7 h-7 text-content-brand-dark bg-surface border-brand-dark border-b rounded-md p-1;
 }
 
 .icn_nav {
@@ -102,11 +104,11 @@
 }
 
 .nav_link {
-  @apply flex gap-1 sm:justify-center justify-start items-center text-center px-2 font-sans text-sm sm:w-fit w-full text-teal-800;
+  @apply flex gap-1 sm:justify-center justify-start items-center text-center px-2 font-sans text-sm sm:w-fit w-full text-content-brand-dark;
 }
 
 .styleTechnoSkill {
-  @apply md:w-[250px] sm:w-[200px] min-w-[240px] w-full h-fit bg-slate-100 text-slate-800 border border-slate-300 rounded-lg shadow-sm overflow-hidden;
+  @apply md:w-[250px] sm:w-[200px] min-w-[240px] w-full h-fit bg-surface text-content-primary border border-border rounded-lg shadow-sm overflow-hidden;
 }
 
 .wn {

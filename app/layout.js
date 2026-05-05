@@ -1,20 +1,20 @@
-import { Inter, JetBrains_Mono } from 'next/font/google';
+import { Inter, JetBrains_Mono } from "next/font/google";
 import NavTop from "../components/nav/NavTop";
 import Footer from "../components/footer/Footer";
 import "../styles/globals.css";
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-inter',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const jetbrainsMono = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500'],
-  variable: '--font-mono',
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
 });
 
 export const metadata = {
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans max-w-5xl mx-auto flex flex-col bg-slate-200 w-full min-h-screen h-fit text-slate-800">
+      <body className="font-sans max-w-5xl mx-auto flex flex-col bg-surface-page w-full min-h-screen h-fit text-content-primary">
         <NavTop />
         {children}
         <Footer />

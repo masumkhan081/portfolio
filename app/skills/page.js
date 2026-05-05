@@ -38,7 +38,7 @@ export default function Page() {
   return (
     <div
       className=" flex-grow flex flex-col sm:gap-[100px] gap-[90px] h-auto
-    sm:py-[50px] md:py-[65px] py-[45px] md:p-[60px] p-[20px] bg-slate-100"
+    sm:py-[50px] md:py-[65px] py-[45px] md:p-[60px] p-[20px] bg-surface"
     >
       <motion.div
         // initial={{ opacity: 0, scale: 0.5 }}

@@ -14,7 +14,7 @@ export default function FindMe() {
     <div className="w-full ">
       <div className="flex gap-2 ">
         <AboutTitle title={"Find Me"} />
-        <span className="font-inter text-sm font-light text-slate-500">
+        <span className="font-inter text-sm font-light text-content-muted">
           {" "}
           {toolTip}
         </span>

@@ -11,7 +11,6 @@ import isValidUrl from "@/utils/isValidURL";
 import ToolBadge from "./ToolBadge";
 
 export default function Project({ name, versions, summary }) {
-
   return (
     // bg-gradient-to-t from-cyan-800 shadow-teal-500
     <motion.div
@@ -20,14 +19,13 @@ export default function Project({ name, versions, summary }) {
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
-      className="pb-1.0 h-fit w-full max-w-4xl rounded-md bg-gradient-to-b from-transparent to-slate-300"
+      className="pb-1.0 h-fit w-full max-w-4xl rounded-md bg-gradient-to-b from-transparent to-border"
     >
-
       <EnhancedTitle name={name} />
 
       <div>
         <ProjectSectionTitle txt={"Summary"} />
-        <div className="ps-1.0 pe-2 py-2 text-slate-800"> {summary}</div>
+        <div className="ps-1.0 pe-2 py-2 text-content-primary"> {summary}</div>
       </div>
 
       <div className="flex flex-col justify-center w-full  gap-4 ">
@@ -35,11 +33,9 @@ export default function Project({ name, versions, summary }) {
           <div key={ind} className="">
             {/* className="border-l-2 border-teal-900 rounded-s-md pb-1 px-2" */}
 
-            {versions.length > 1 && (
-              <ProjectSectionTitle txt={ver.version} />
-            )}
+            {versions.length > 1 && <ProjectSectionTitle txt={ver.version} />}
 
-            <div className="ps-1.0 mt-1 flex flex-row flex-wrap justify-start gap-5 text-sm text-slate-800">
+            <div className="ps-1.0 mt-1 flex flex-row flex-wrap justify-start gap-5 text-sm text-content-primary">
               <CustomLink
                 txt={ver?.fe_github_link ? "frontend" : "No frontend"}
                 href={ver?.fe_github_link}
@@ -51,7 +47,7 @@ export default function Project({ name, versions, summary }) {
                 href={ver?.be_github_link}
                 icon={<Github clsnames="me-1 w-5 h-5 inline" />}
               />
-             
+
               <CustomLink
                 txt={isValidUrl(ver.deploy_link) ? "live" : "Not live"}
                 href={ver.deploy_link}

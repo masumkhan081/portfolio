@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function ProjectSectionTitle({txt}) {
+export default function ProjectSectionTitle({ txt }) {
   return (
-    <span className="font-semibold text-sm text-teal-800 w-fit rounded-r-md px-2 ">
-    {txt}
-  </span>
-  )
+    <span className="font-semibold text-sm text-content-brand-dark w-fit rounded-r-md px-2 ">
+      {txt}
+    </span>
+  );
 }
