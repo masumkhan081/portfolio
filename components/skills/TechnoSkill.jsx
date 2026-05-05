@@ -27,7 +27,7 @@ export default function TechnoSkill({ title, list }) {
               {isValidUrl(src) && <a
                 target="_blank"
                 href={src}
-                className="text-blue-400 font-mono flex gap-1 items-center rounded-lg  py-0 px-1"
+                className="text-slate-500 font-mono flex gap-1 items-center rounded-lg  py-0 px-1"
               >
                 <Github clsnames=" w-5 h-5" />
                 code-notes

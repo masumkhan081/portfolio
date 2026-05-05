@@ -10,13 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        agud: ["Agu Display", "serif"],
-        anton: ['Anton', 'sans-serif'], // Add the Anton font family
-        jersey: ['Jersey 15', 'serif'], // Add the Jersey 15 font family
-        rubik: ["Rubik Iso"],
-        titan: ["Titan One"],
-        averia: ["Averia Serif Libre"],
-        inter: ["Inter"],
+        sans: ['var(--font-inter)', 'sans-serif'],
+        mono: ['var(--font-mono)', 'monospace'],
       },
       spacing: {
         0.125: "0.125rem",

@@ -31,7 +31,7 @@ export default function CodingSkill() {
 
     return (
         <div>
-            <div className=" flex gap-3 flex-row justify-start text-sm font-mono font-light text-teal-700 rounded-sm  ">
+            <div className=" flex gap-3 flex-row justify-start text-sm font-light text-teal-700 rounded-sm  ">
                 {Object.keys(algoList).map((tab, ind) => {
                     return (
                         <button
@@ -49,7 +49,7 @@ export default function CodingSkill() {
                 {Object.keys(algoList[currentView]).map((item, ind) => {
                     return (
                         <div
-                            className="font-mono sm:rounded-3xl rounded-md border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
+                            className="sm:rounded-3xl rounded-md border bg-slate-200 border-slate-400 flex flex-col gap-2 px-1.0 py-1"
                             key={ind}
                         >
                             <button
@@ -57,7 +57,7 @@ export default function CodingSkill() {
                                 className="px-2 py-0.125 bg-slate-300 text-teal-800 sm:rounded-3xl rounded-md shadow-md font-bold w-fit flex gap-2 justify-center items-center"
                             >
                                 {item}
-                                <span className="rounded-full px-2 bg-teal-800 text-yellow-100 font-normal">
+                                <span className="rounded-full px-2 bg-teal-800 text-slate-100 font-normal">
                                     {algoList?.[currentView]?.[item]?.length}
                                 </span>
 

@@ -7,10 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "2": "git add . && git commit -m `commited`",
-    "3": "git add . && git commit -m `commited` && git push",
-    "format": "prettier --write \"app/**/*.{js,jsx}\" \"test/**/*.{js,jsx}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write \"app/**/*.{js,jsx}\" \"components/**/*.{js,jsx}\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
@@ -24,7 +23,15 @@
     "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

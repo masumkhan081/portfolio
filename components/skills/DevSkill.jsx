@@ -14,7 +14,7 @@ export default function DevSkill({ title, list }) {
         {title}
       </span>
 
-      <ul className="py-3 font-mono text-sm space-y-2">
+      <ul className="py-3 text-sm space-y-2">
         {list.map((itm, ind) => {
           return (
             <li

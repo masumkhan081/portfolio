@@ -27,7 +27,7 @@ export default function Experiences() {
                 </a>
               </li>
 
-              <li className="text-xs font-mono font-extralight">{workExperience.contributions}</li>
+              <li className="text-xs font-extralight">{workExperience.contributions}</li>
             </ul>
           );
         })}

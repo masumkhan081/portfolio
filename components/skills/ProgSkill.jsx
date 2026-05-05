@@ -66,11 +66,11 @@ function Uhunt_Stats() {
           <div className="flex flex-col gap-2">
             <label
               htmlFor="modal-uhunt"
-              className=" rounded-md text-center border-0 text-sm-lg btn-error absolute right-2 top-2 w-1/4 font-extrabold font-mono bg-amber-800 text-amber-100"
+              className=" rounded-md text-center border-0 text-sm-lg btn-error absolute right-2 top-2 w-1/4 font-bold bg-slate-800 text-slate-100"
             >
               C L O S E
             </label>
-            <h3 className=" w-1/3 px-1 text-sm-lg rounded-md   absolute left-2 top-2 font-extrabold font-mono bg-teal-900    text-amber-500 text-center">
+            <h3 className=" w-1/3 px-1 text-sm-lg rounded-md absolute left-2 top-2 text-center text-slate-800">
               Uhunt Stats
             </h3>
           </div>
@@ -120,7 +120,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Backtracking
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 4
               </span>
             </div>
@@ -139,7 +139,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Dynamic Algorithm
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 20
               </span>
             </div>
@@ -176,7 +176,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Graph & Greedy Algorithms{" "}
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 8
               </span>
             </div>
@@ -201,7 +201,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Number Theory
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 22
               </span>
             </div>
@@ -240,7 +240,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Pattern Matching
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 6
               </span>
             </div>
@@ -263,7 +263,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Recursion
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 10
               </span>
             </div>
@@ -290,7 +290,7 @@ function Cl_Algo_Modal() {
             <input type="checkbox" className="my-0 py-0" />
             <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
               Searching And Sorting
-              <span className="ms-3 rounded-lg bg-teal-800 text-emerald-200 px-2">
+              <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 7
               </span>
             </div>

@@ -6,13 +6,13 @@ export default function Footer() {
     <div className="flex justify-center w-full h-fit mt-auto py-3.0 bg-gradient-to-b from-slate-300 to-slate-200 rounded-md ">
       <ul>
         <li className=" ">
-          isTemplateApplied: <span className="text-emerald-700"> False</span>
+          isTemplateApplied: <span className="text-teal-700"> False</span>
         </li>
         <li className=" ">
           developedBy:
           <Link
             href="https://github.com/masumkhan081"
-            className="text-emerald-700"
+            className="text-teal-700"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -20,7 +20,7 @@ export default function Footer() {
           </Link>
         </li>
         <li className=" ">
-          isCustomCoded: <span className="text-emerald-700"> true</span>
+          isCustomCoded: <span className="text-teal-700"> true</span>
         </li>
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { ADLaM_Display } from "next/font/google"
+
 import ListItem from "../common/ListItem";
 import Image from "next/image";
 import MasumK from "../../public/images/masumkhan.png";

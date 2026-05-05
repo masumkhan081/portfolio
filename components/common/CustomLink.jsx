@@ -13,7 +13,7 @@ export default function CustomLink({ txt, icon, href }) {
       target="_blank"
       rel="noopener noreferrer"
       href={isValidUrl(href)? href : undefined} // Remove href if not valid
-      className={`flex justify-center items-center border-b border-transparent ps-1 pe-2 py-1  font-agud drop-shadow ${styLogic(href)}`}
+      className={`flex justify-center items-center border-b border-transparent ps-1 pe-2 py-1 drop-shadow ${styLogic(href)}`}
     >
       {icon}
       {txt}

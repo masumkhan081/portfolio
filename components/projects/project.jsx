@@ -21,14 +21,14 @@ export default function Project({ name, versions, summary }) {
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
 
-      className="pb-1.0 h-fit md:w-2/5 w-auto font-mono md:mx-auto  rounded-md bg-gradient-to-b from-transparent to-slate-300"
+      className="pb-1.0 h-fit w-full max-w-4xl mx-auto rounded-md bg-gradient-to-b from-transparent to-slate-300"
     >
 
       <EnhancedTitle name={name} />
 
       <div>
         <ProjectSectionTitle txt={"Summary"} />
-        <div className="ps-1.0 pe-2 py-2 text-slate-800 font-mono"> {summary}</div>
+        <div className="ps-1.0 pe-2 py-2 text-slate-800"> {summary}</div>
       </div>
 
       <div className="flex flex-col justify-center w-full  gap-4 ">
@@ -40,7 +40,7 @@ export default function Project({ name, versions, summary }) {
               <ProjectSectionTitle txt={ver.version} />
             )}
 
-            <div className="ps-1.0 mt-1 flex flex-row flex-wrap justify-start gap-5 text-sm text-blue-950">
+            <div className="ps-1.0 mt-1 flex flex-row flex-wrap justify-start gap-5 text-sm text-slate-800">
               <CustomLink
                 txt={ver?.fe_github_link ? "frontend" : "No frontend"}
                 href={ver?.fe_github_link}

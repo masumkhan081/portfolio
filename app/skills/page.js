@@ -62,7 +62,7 @@ export default function Page() {
 
       <motion.div className="  sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Technological Skills" />
-        <div className=" overflow-x-scroll flex gap-1.0 md:justify-start justify-between ">
+        <div className="flex flex-wrap gap-1.0 justify-center">
           <TechnoSkill title={"Languages"} list={languages} />
           <TechnoSkill title={"Fronend"} list={frontendTechs} />
           <TechnoSkill title={"Backend"} list={backendTechs} />

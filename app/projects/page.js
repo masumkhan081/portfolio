@@ -34,7 +34,7 @@ export default function Page() {
   };
 
   const sty_btn_tab = (tab) =>
-    "shadow border rounded-md px-2 py-1 text-sm font-mono " +
+    "shadow border rounded-md px-2 py-1 text-sm " +
     (currentView === tab ? "bg-slate-300 " : "");
 
   //
@@ -59,7 +59,7 @@ export default function Page() {
 
       <div
         // style={{ ...springs }}
-        className="  w-full h-auto flex md:flex-row flex-col flex-wrap justify-around gap-y-[45px]"
+        className="w-full h-auto flex flex-col items-center gap-y-[45px]"
       >
         {projectList
           .filter(
