@@ -20,8 +20,7 @@ export default function Project({ name, versions, summary }) {
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.9 }}
-
-      className="pb-1.0 h-fit w-full max-w-4xl mx-auto rounded-md bg-gradient-to-b from-transparent to-slate-300"
+      className="pb-1.0 h-fit w-full max-w-4xl rounded-md bg-gradient-to-b from-transparent to-slate-300"
     >
 
       <EnhancedTitle name={name} />

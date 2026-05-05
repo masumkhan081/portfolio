@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Brand */
+    --color-brand: theme('colors.teal.700');
+    --color-brand-dark: theme('colors.teal.800');
+    --color-brand-subtle: theme('colors.teal.400');
+    --color-brand-muted: theme('colors.teal.100');
+
+    /* Surface */
+    --color-bg-page: theme('colors.slate.200');
+    --color-bg-surface: theme('colors.slate.100');
+    --color-bg-subtle: theme('colors.slate.200');
+    --color-bg-raised: theme('colors.white');
+
+    /* Border */
+    --color-border: theme('colors.slate.300');
+    --color-border-brand: theme('colors.teal.400');
+
+    /* Text */
+    --color-text-primary: theme('colors.slate.800');
+    --color-text-secondary: theme('colors.slate.600');
+    --color-text-muted: theme('colors.slate.500');
+    --color-text-brand: theme('colors.teal.700');
+    --color-text-on-brand: theme('colors.slate.100');
+  }
+
   body {
     @apply font-sans text-base leading-[1.6] sm:leading-[1.7];
   }
@@ -61,7 +86,7 @@
 }
 
 .nav_drop_down {
-  @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border rounded-md bg-green-200 border-yellow-600;
+  @apply block absolute z-10 top-[40px] left-[48px] right-[48px] h-auto border border-border rounded-md bg-surface shadow-md;
 }
 
 .icn_socials {
@@ -81,17 +106,9 @@
 }
 
 .styleTechnoSkill {
-  @apply md:w-[250px] sm:w-[200px] min-w-[240px] w-full h-fit bg-slate-100 text-slate-800 border border-slate-300 rounded-md p-3 shadow-sm;
+  @apply md:w-[250px] sm:w-[200px] min-w-[240px] w-full h-fit bg-slate-100 text-slate-800 border border-slate-300 rounded-lg shadow-sm overflow-hidden;
 }
 
 .wn {
   @apply whitespace-nowrap
-}
-
-.brdr {
-  @apply border-2 border-red-500;
-}
-
-.brdrr {
-  @apply border-2 border-blue-500;
-}
+}

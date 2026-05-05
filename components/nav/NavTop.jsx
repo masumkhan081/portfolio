@@ -15,15 +15,13 @@ export default function Nav() {
 
   const styLogic = () =>
     menuFolded
-      ? " sm:flex sm:flex-row flex-col hidden gap-4 justify-center items-center text-orange-800 "
+      ? " sm:flex sm:flex-row flex-col hidden gap-4 justify-center items-center "
       : " flex sm:flex-row flex-col gap-2 px-4 ";
 
   return (
     <div
-
       style={{ position: "-webkit-sticky", position: "sticky", top: 0, zIndex: "50" }}
-      className="sm:bg-slate-100 bg-gradient-to-t from-slate-300 to-slate-100 
-      sm:from-slate-100 sm:to-slate-100 rounded-b-xl rounded-t-md text-pr/600 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-1.0 sm:py-3 py-2 text-1/1  ">
+      className="bg-slate-200/80 backdrop-blur-md border-b border-slate-300 w-full flex flex-row sm:justify-center justify-between items-center sm:px-3.0 px-1.0 sm:py-3 py-2">
       <div className={styLogic()}>
         {navLinks.map((link, key) => {
           return (

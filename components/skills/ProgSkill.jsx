@@ -8,14 +8,14 @@ import Github from "../../public/icons/Github";
 //
 export default function ProgSkill() {
   return (
-    <div className="per_skills bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow md:w-1/3 sm:w-2/5 w-screen p-3 ">
-      <span className="block  text-base font-bold bg-teal-900 text-green-200  text-center rounded-sm">
-        <SkillSetIcon clsnames="me-1 inline w-6 h-6" /> Programming
+    <div className="bg-surface border border-border rounded-lg shadow-sm overflow-hidden md:w-1/3 sm:w-2/5 w-full">
+      <span className="flex items-center gap-2 text-sm font-bold text-content-primary bg-surface-subtle px-3 py-2 w-full">
+        <SkillSetIcon clsnames="me-1 inline w-5 h-5" /> Programming
       </span>
-      <ul className="mt-4 mb-2 flex flex-col gap-3  w-full ">
-        <li className="w-fit ">
+      <ul className="mt-3 mb-3 flex flex-col gap-2 w-full px-3">
+        <li className="w-fit">
           <a
-            className="mx-2 btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow  "
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-md border border-border bg-surface-raised text-content-brand hover:border-border-brand hover:text-brand transition-all duration-200 shadow-sm"
             href="https://uhunt.onlinejudge.org/id/759640"
             target="_blank"
           >
@@ -23,10 +23,10 @@ export default function ProgSkill() {
           </a>
         </li>
 
-        <li className="w-fit ms-4">
+        <li className="w-fit">
           <label
             htmlFor="modal-uhunt"
-            className=" px-2 btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow "
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-md border border-border bg-surface-raised text-content-brand hover:border-border-brand hover:text-brand transition-all duration-200 shadow-sm cursor-pointer"
           >
             UVA uhunt stats
           </label>
@@ -34,19 +34,19 @@ export default function ProgSkill() {
           <Uhunt_Stats />
         </li>
 
-        <li className="w-fit ms-6">
+        <li className="w-fit">
           <label
             htmlFor="modal-classicalgo"
-            className="  btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow  "
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-md border border-border bg-surface-raised text-content-brand hover:border-border-brand hover:text-brand transition-all duration-200 shadow-sm cursor-pointer"
           >
             Classic Algorithm
           </label>
           <Cl_Algo_Modal />
         </li>
-        <li className="w-fit ms-8">
+        <li className="w-fit">
           <label
             htmlFor="modal-ml"
-            className=" btn btn-outline btn-sm w-full text-transform: capitalize bg-teal-800 bg-gradient-to-t from-teal-600 rounded-md  shadow "
+            className="inline-flex items-center gap-1.5 px-3 py-1 text-sm rounded-md border border-border bg-surface-raised text-content-brand hover:border-border-brand hover:text-brand transition-all duration-200 shadow-sm cursor-pointer"
           >
             Machine Learning
           </label>
@@ -118,7 +118,7 @@ function Cl_Algo_Modal() {
 
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Backtracking
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 4
@@ -137,7 +137,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Dynamic Algorithm
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 20
@@ -174,7 +174,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Graph & Greedy Algorithms{" "}
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 8
@@ -199,7 +199,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Number Theory
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 22
@@ -238,7 +238,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Pattern Matching
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 6
@@ -261,7 +261,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Recursion
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 10
@@ -288,7 +288,7 @@ function Cl_Algo_Modal() {
           </div>
           <div className="collapse bg-slate-100 py-0 ">
             <input type="checkbox" className="my-0 py-0" />
-            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-amber-600">
+            <div className="collapse-title text-base font-bold text-teal-700 bg-slate-300 rounded-lg border-t-2 border-brand-subtle">
               Searching And Sorting
               <span className="ms-3 rounded-lg bg-teal-800 text-teal-100 px-2">
                 7
@@ -333,7 +333,7 @@ function ML_Modal() {
           <a
             href="https://github.com/masumkhan081/ml_algo"
             target="_blank"
-            className="text-blue-300"
+            className="text-content-on-brand"
           >
             <Github clsnames="me-1 w-5 h-5 inline" />
             Github src

@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans max-w-[1680px] mx-auto flex flex-col bg-slate-200 w-full min-h-screen h-fit text-slate-800">
+      <body className="font-sans max-w-5xl mx-auto flex flex-col bg-slate-200 w-full min-h-screen h-fit text-slate-800">
         <NavTop />
         {children}
         <Footer />

@@ -59,7 +59,7 @@ export default function Page() {
 
       <div
         // style={{ ...springs }}
-        className="w-full h-auto flex flex-col items-center gap-y-[45px]"
+        className="w-full h-auto flex flex-col items-start gap-y-[45px]"
       >
         {projectList
           .filter(

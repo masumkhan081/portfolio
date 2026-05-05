@@ -3,7 +3,7 @@ import { FaClipboardList } from "react-icons/fa";
 
 export default function SKillTitle({ SKillTitle }) {
   return (
-    <span className=" bg-slate-100 shadow-inner flex justify-center items-center py-1 gap-2 text-1/1 font-semibold rounded-sm">
+    <span className="flex justify-start items-center gap-2 text-sm font-bold text-slate-800 bg-slate-200 px-3 py-2 w-full">
         <FaClipboardList clsnames="me-1 inline w-6 h-6" /> <span>{SKillTitle}</span>
       </span>
   );

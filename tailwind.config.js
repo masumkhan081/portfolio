@@ -97,6 +97,31 @@ module.exports = {
         "3.25/3.5": ["3.25rem", "3.5rem"],
       },
       colors: {
+        /* Semantic design tokens — use these instead of raw slate/teal */
+        brand: {
+          DEFAULT: 'var(--color-brand)',
+          dark: 'var(--color-brand-dark)',
+          subtle: 'var(--color-brand-subtle)',
+          muted: 'var(--color-brand-muted)',
+        },
+        surface: {
+          page: 'var(--color-bg-page)',
+          DEFAULT: 'var(--color-bg-surface)',
+          subtle: 'var(--color-bg-subtle)',
+          raised: 'var(--color-bg-raised)',
+        },
+        border: {
+          DEFAULT: 'var(--color-border)',
+          brand: 'var(--color-border-brand)',
+        },
+        content: {
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          muted: 'var(--color-text-muted)',
+          brand: 'var(--color-text-brand)',
+          'on-brand': 'var(--color-text-on-brand)',
+        },
+        /* Legacy raw palette — kept for backward compat, migrate away from these */
         "dark-green": "#05201F",
         "dark-brown": "#362B06",
         "tea-green": "#DCFFB9",

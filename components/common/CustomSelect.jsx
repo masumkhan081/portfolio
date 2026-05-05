@@ -24,8 +24,8 @@ const CustomSelect = ({ options, value, onChange, bg }) => {
   };
 
   const styles = {
-    light: "bg-slate-300 text-black border border-slate-500",
-    blue: "bg-blue-700 text-white",
+    light: "bg-surface-subtle text-content-primary border border-border",
+    brand: "bg-brand text-content-on-brand border border-brand-subtle",
   };
 
   return (
@@ -45,7 +45,7 @@ const CustomSelect = ({ options, value, onChange, bg }) => {
               key={index}
               className={`${
                 value === option ? "bg-primary" : "bg-white text-black"
-              } capitalize py-2 px-4 cursor-pointer   hover:bg-blue-800 hover:text-white`}
+              } capitalize py-2 px-4 cursor-pointer hover:bg-brand-muted hover:text-content-brand`}
               onClick={() => {
                 onChange(option);
                 setIsOpen(false);

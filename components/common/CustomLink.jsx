@@ -5,8 +5,8 @@ import isValidUrl from "../../utils/isValidURL";
 export default function CustomLink({ txt, icon, href }) {
   const styLogic = (href) =>
     isValidUrl(href)
-      ? "text-blue-800 hover:border-blue-700 "
-      : "opacity-70 cursor-not-allowed";
+      ? "text-content-brand hover:border-border-brand "
+      : "opacity-50 cursor-not-allowed";
 
   return (
     <a

@@ -21,7 +21,7 @@ export default function Experiences() {
                 <a
                   href={workExperience.organizatio_website}
                   target="_blank"
-                  className="text-blue-500 wn"
+                  className="text-content-brand hover:underline wn"
                 >
                   {workExperience.organization}
                 </a>

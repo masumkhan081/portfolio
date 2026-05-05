@@ -13,7 +13,7 @@ export default function PersonalSkill({ skills }) {
   }
 
   return (
-    <ul className=" px-2 space-y-2  mx-auto text-teal-950 text-xl font-semibold opacity-85">
+    <ul className="px-2 space-y-2 mx-auto text-slate-800 text-base font-semibold opacity-90">
       {skills.map((skill, index) => (
         <li
         key={index}
