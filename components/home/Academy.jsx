@@ -1,27 +1,9 @@
 import React from "react";
-import { FaGraduationCap, FaUniversity } from "react-icons/fa";
-
 import ListItem from "../common/ListItem";
 import AboutTitle from "../common/AboutTitle";
+import { educations } from "../../data/home.data/academy.data";
 
 export default function Academy() {
-  const educations = [
-    {
-      title: "SSC (2011)",
-      desc: "(Sci), Sylhet Govt. Pilot High School",
-      icon: <FaUniversity />,
-    },
-    {
-      title: "HSC (2014)",
-      desc: "(Sci), Beanibazar Govt College",
-      icon: <FaUniversity />,
-    },
-    {
-      title: "B.Sc (Apr-2019)",
-      desc: "(CSE), North East University BD",
-      icon: <FaUniversity />,
-    },
-  ];
   return (
     <div className="w-full">
       <AboutTitle title="Academy" />

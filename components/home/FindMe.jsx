@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-//  icon & images
-import { profileLinks } from "../../data/home.data/social.data";
+import { profileLinks, contactInfo } from "../../data/home.data/social.data";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import AboutTitle from "../common/AboutTitle";
@@ -22,10 +21,10 @@ export default function FindMe() {
 
       <ul className="flex flex-col flex-wrap gap-2 py-2 ps-2">
         <ListItem
-          plainText="+880 1833347848"
+          plainText={contactInfo.phone}
           icon={<BsFillTelephoneOutboundFill />}
         />
-        <ListItem plainText="masumkhan081@gmail.com" icon={<MdEmail />} />
+        <ListItem plainText={contactInfo.email} icon={<MdEmail />} />
       </ul>
       <div className="flex sm:gap-5 gap-3 flex-wrap ps-2 py-1 relative">
         {profileLinks.map((profile, ind) => {

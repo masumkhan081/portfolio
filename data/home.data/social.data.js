@@ -1,3 +1,8 @@
+export const contactInfo = {
+  phone: "01896-118064",
+  email: "masumkhan081@gmail.com",
+};
+
 import {
   FaTwitter,
   FaInstagram,
@@ -10,7 +15,7 @@ import {
 export const profileLinks = [
   {
     icon: <FaFirefoxBrowser className="icn_socials_sm" />,
-    link: "https://masumk081.web.app",
+    link: "https://masum-khan.com",
     platform: "Portfolio",
   },
   {

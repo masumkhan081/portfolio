@@ -1,1 +1,2 @@
-
+echo "Running production build check before push..."
+npm run build || { echo "Build failed. Push blocked. Fix the build before pushing."; exit 1; }

@@ -1,16 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaPlus,
-  FaRegStar,
-  FaRegStarHalf,
-  FaStar,
-  FaStarHalfAlt,
-  FaStarOfLife,
-} from "react-icons/fa";
-// import { animated, useSpring } from "@react-spring/web";
-
 import {
   backendSKills,
   fronendSKills,
@@ -20,8 +10,6 @@ import personalSkills from "../../data/skills.data/personal.data";
 import {
   languages,
   backendTechs,
-  frameworks,
-  toDos,
   frontendTechs,
   dbTechs,
   devProcessTechs,
@@ -30,7 +18,6 @@ import TechnoSkill from "../../components/skills/TechnoSkill";
 import DevSkill from "../../components/skills/DevSkill";
 import PersonalSkill from "../../components/skills/PerSkill";
 import EnhancedTitle from "../../components/common/EnhancedTitle";
-//
 import CodingSkill from "@/components/skills/CodingSkill";
 
 //
