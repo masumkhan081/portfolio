@@ -13,7 +13,7 @@ export default function Experiences() {
   return (
     <div className="w-full">
       <AboutTitle title="Experiences" />
-      <ul className="p-2 flex flex-col justify-center sm:items-start items-center">
+      <ul className="p-2 flex flex-col justify-center items-start">
         {experiences.map((workExperience, ind) => {
           const hasContributions = !!workExperience.contributions;
           const isExpanded = expandedIndex === ind;

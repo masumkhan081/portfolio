@@ -15,7 +15,7 @@ export default function Home() {
     <div className="bg-surface rounded sm:px-3.0 px-1.0 py-16 grid md:grid-cols-2 grid-cols-1 gap-16 ">
       <div className=" col-span-1 flex flex-col gap-16 justify-start md:items-center sm:items-center md:px-3.0 sm:px-2.0 px-1.0">
         <Image
-          className="w-28 sm:w-36 md:w-48 rounded-full shadow-md object-cover"
+          className="w-30 sm:w-36 md:w-48 rounded-full shadow-md object-cover"
           src={MasumK}
           alt="Masum Khan"
         />
