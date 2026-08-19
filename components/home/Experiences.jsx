@@ -39,12 +39,14 @@ export default function Experiences() {
                   <span className={isExpanded ? "" : "line-clamp-1"}>
                     {workExperience.contributions}
                   </span>
-                  <button
-                    onClick={() => handleToggle(ind)}
-                    className="ml-1 text-content-brand hover:underline text-xs font-normal"
-                  >
-                    {isExpanded ? "see less" : "see more"}
-                  </button>
+                  {!isExpanded && (
+                    <button
+                      onClick={() => handleToggle(ind)}
+                      className="ml-1 text-content-brand hover:underline text-xs font-normal"
+                    >
+                      see more
+                    </button>
+                  )}
                 </li>
               )}
             </ul>
