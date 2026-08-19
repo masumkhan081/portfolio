@@ -40,7 +40,7 @@ export default function Page() {
 
       <motion.div className=" sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Development Skills" />
-        <div className="grid grid-cols-3 gap-3 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
           <DevSkill title={"fornt-end skill"} list={fronendSKills} />
           <DevSkill title={"back-end skill"} list={backendSKills} />
           <DevSkill title={"others"} list={otherSkills} />
@@ -49,7 +49,7 @@ export default function Page() {
 
       <motion.div className="  sm:py-1.0 py-1.0 flex flex-col sm:gap-[55px] gap-[40px] h-auto">
         <EnhancedTitle name="Technological Skills" />
-        <div className="flex flex-wrap gap-1.0 justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center items-stretch max-w-4xl mx-auto w-full">
           <TechnoSkill title={"Languages"} list={languages} />
           <TechnoSkill title={"Fronend"} list={frontendTechs} />
           <TechnoSkill title={"Backend"} list={backendTechs} />

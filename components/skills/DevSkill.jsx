@@ -11,7 +11,7 @@ export default function DevSkill({ title, list }) {
       : "text-content-primary h-2 w-2 opacity-50";
 
   return (
-    <motion.div className="sm:col-span-1 col-span-3 bg-surface border border-border shadow-sm rounded-lg overflow-hidden">
+    <motion.div className="h-full flex flex-col bg-surface border border-border shadow-sm rounded-lg overflow-hidden">
       <span className="text-sm font-bold text-content-primary bg-surface-subtle px-3 py-2 text-left block w-full">
         {title}
       </span>

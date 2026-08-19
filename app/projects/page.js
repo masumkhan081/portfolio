@@ -40,10 +40,10 @@ export default function Page() {
   //
   return (
     <div
-      className=" flex flex-col items-center  gap-1.0 bg-surface 
+      className="flex flex-col items-center gap-8 bg-surface
     sm:py-[60px] md:py-[90px] py-[55px] md:p-[60px] p-[20px]"
     >
-      <div className=" flex gap-2 flex-wrap wn justify-center w-fit rounded-md">
+      <div className="flex gap-2 flex-wrap justify-center w-fit rounded-md">
         {mapProjectTabs &&
           Object.values(mapProjectTabs).map((tab, ind) => {
             return (
@@ -59,7 +59,7 @@ export default function Page() {
 
       <div
         // style={{ ...springs }}
-        className="w-full h-auto flex flex-col items-start gap-y-[45px]"
+        className="w-full max-w-4xl h-auto flex flex-col items-center gap-y-[45px]"
       >
         {projectList
           .filter(

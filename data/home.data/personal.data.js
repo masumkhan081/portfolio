@@ -4,17 +4,12 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 const persInfo = [
   {
-    data: "Abdullah Al Masum khan",
+    data: "Masum Khan",
     icon: <BsFillPersonFill />,
   },
-  { data: "Beanibazar, Sylhet", icon: <AiFillHome /> },
   {
-    data: "Khadimpara, Shahporan, Sylhet Sadar",
+    data: "Sylhet, Bangladesh",
     icon: <AiFillHome />,
-  },
-  {
-    data: "Sagufta, Mirpur-12, Dhaka",
-    icon: <ImLocation2 />,
   },
 ];
 

@@ -11,7 +11,7 @@ const levelBorder = {
 
 export default function TechnoSkill({ title, list }) {
   return (
-    <div className="styleTechnoSkill hover:border-brand-subtle hover:shadow-md transition-all duration-300">
+    <div className="styleTechnoSkill flex flex-col h-full hover:border-brand-subtle hover:shadow-md transition-all duration-300">
       <SKillTitle SKillTitle={title} />
       <div className="flex flex-col gap-0.5 my-3 text-sm px-3 pb-3">
         {list.map(({ name, src, level }, ind) => {

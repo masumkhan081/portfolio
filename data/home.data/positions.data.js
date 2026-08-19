@@ -1,5 +1,3 @@
-const positions = [
-  "Mid-Senior Full Stack Developer",
-  "Mid-Senior Back-end Developer",
-];
+const positions = ["Full Stack Developer"];
+
 export default positions;

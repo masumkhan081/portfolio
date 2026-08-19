@@ -108,7 +108,7 @@
 }
 
 .styleTechnoSkill {
-  @apply md:w-[250px] sm:w-[200px] min-w-[240px] w-full h-fit bg-surface text-content-primary border border-border rounded-lg shadow-sm overflow-hidden;
+  @apply w-full max-w-[280px] h-full bg-surface text-content-primary border border-border rounded-lg shadow-sm overflow-hidden;
 }
 
 .wn {

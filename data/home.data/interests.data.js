@@ -6,8 +6,20 @@ import {
 } from "react-icons/bs";
 
 export const interests = [
-  { title: "Docker", icon: <BsFill1CircleFill /> },
-  { title: "Serverless arcitecture", icon: <BsFill2CircleFill /> },
-  { title: "Blockchain", icon: <BsFill3CircleFill /> },
-  { title: "Deep Learning", icon: <BsFill4CircleFill /> },
+  {
+    title: "Scalable Infrastructure",
+    icon: <BsFill1CircleFill />,
+  },
+  {
+    title: "Microservices & Distributed Systems",
+    icon: <BsFill2CircleFill />,
+  },
+  {
+    title: "Cloud-native & DevOps Engineering",
+    icon: <BsFill3CircleFill />,
+  },
+  {
+    title: "AI-assisted Software Engineering",
+    icon: <BsFill4CircleFill />,
+  },
 ];

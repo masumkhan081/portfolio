@@ -5,71 +5,54 @@ export const languages = [
     level: "expert",
   },
   { name: "Typescript", src: "#", level: "expert" },
-  { name: "Rust", src: "#", level: "intermediate" },
-  { name: "C++", src: "#", level: "intermediate" },
-  { name: "Python", src: "#", level: "expert" },
-  { name: "Java", src: "#", level: "begineer" },
-
-  { name: "Assembly", src: "#", level: "begineer" },
+  { name: "Python", src: "#", level: "intermediate" },
+  { name: "Go", src: "#", level: "intermediate" },
 ];
+
 export const frontendTechs = [
-  {
-    name: "Next-react-redux",
-    src: "#",
-    level: "expert",
-  },
-  { name: "quasar-vue-pinia", src: "#", level: "begineer" },
-  { name: "zustand", src: "#", level: "expert" },
-  { name: "shadCN", src: "#", level: "expert" },
-  { name: "apexcharts", src: "#", level: "expert" },
-  { name: "framer-motion", src: "#", level: "expert" },
+  { name: "React", src: "#", level: "expert" },
+  { name: "Next.js", src: "#", level: "expert" },
+  { name: "Tailwind CSS", src: "#", level: "expert" },
+  { name: "Shadcn/ui", src: "#", level: "expert" },
+  { name: "Ant Design", src: "#", level: "intermediate" },
+  { name: "TanStack Query", src: "#", level: "intermediate" },
+  { name: "Redux", src: "#", level: "expert" },
+  { name: "Zustand", src: "#", level: "expert" },
+  { name: "React Hook Form", src: "#", level: "expert" },
 ];
 
 export const backendTechs = [
-  {
-    name: "express",
-    src: "#",
-    level: "expert",
-  },
-  { name: "nest", src: "#", level: "expert" },
-  { name: "nodemailer", src: "#", level: "expert" },
-  { name: "orama", src: "#", level: "expert" },
-  { name: "ssl", src: "#", level: "expert" },
-  { name: "stripe", src: "#", level: "expert" },
-  { name: "socket", src: "#", level: "expert" },
-  { name: "redis", src: "#", level: "expert" },
-  { name: "rabbitMQ", src: "#", level: "expert" },
-  { name: "passport", src: "#", level: "expert" },
-  { name: "zod / joi", src: "#", level: "expert" },
-  { name: "jwt", src: "#", level: "expert" },
+  { name: "Express.js", src: "#", level: "expert" },
+  { name: "NestJS", src: "#", level: "expert" },
+  { name: "S3", src: "#", level: "intermediate" },
+  { name: "Stripe", src: "#", level: "intermediate" },
+  { name: "Socket.IO", src: "#", level: "expert" },
+  { name: "Redis", src: "#", level: "intermediate" },
+  { name: "RabbitMQ", src: "#", level: "intermediate" },
+  { name: "BullMQ", src: "#", level: "intermediate" },
+  { name: "Better Auth", src: "#", level: "intermediate" },
+  { name: "Clerk", src: "#", level: "intermediate" },
+  { name: "Zod", src: "#", level: "expert" },
+  { name: "JWT", src: "#", level: "expert" },
 ];
 
 export const toDos = [
   {
-    name: "Cloud platforms (AWS, Azure, Google Cloud) ",
+    name: "Cloud platforms (AWS, Azure, Google Cloud)",
     priority: "high",
   },
   {
     name: "GraphQL",
     priority: "high",
   },
-  {
-    name: "Golang",
-    priority: "high",
-  },
 ];
 
 export const dbTechs = [
-  {
-    name: "Mongodb",
-    src: "#",
-    level: "expert",
-  },
-  { name: "Postgres", src: "#", level: "expert" },
-  { name: "Mysql", src: "#", level: "expert" },
-  { name: "Sqlite", src: "#", level: "expert" },
+  { name: "MongoDB", src: "#", level: "expert" },
+  { name: "PostgreSQL", src: "#", level: "expert" },
   { name: "Mongoose", src: "#", level: "expert" },
   { name: "Prisma", src: "#", level: "expert" },
+  { name: "Drizzle", src: "#", level: "intermediate" },
 ];
 
 export const devProcessTechs = [
@@ -78,5 +61,9 @@ export const devProcessTechs = [
     src: "#",
     level: "expert",
   },
-  { name: "Edrawmax", src: "#", level: "expert" },
+  {
+    name: "Docker",
+    src: "#",
+    level: "intermediate",
+  },
 ];
