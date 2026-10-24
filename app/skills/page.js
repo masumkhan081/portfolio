@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   backendSKills,
   fronendSKills,
-  otherSkills,
+  infrastructureSkills,
 } from "../../data/skills.data/devSkills.data";
 import personalSkills from "../../data/skills.data/personal.data";
 import {
@@ -43,7 +43,10 @@ export default function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 items-stretch">
           <DevSkill title={"fornt-end skill"} list={fronendSKills} />
           <DevSkill title={"back-end skill"} list={backendSKills} />
-          <DevSkill title={"others"} list={otherSkills} />
+          <DevSkill
+            title={"Infrastructure & Platform Engineering"}
+            list={infrastructureSkills}
+          />
         </div>
       </motion.div>
 

@@ -6,6 +6,7 @@ const fronendSKills = [
 
 const backendSKills = [
   "Database from requirements",
+  "System design and data modeling (UML, ERD)",
   "Authentication & Authorization",
   "REST API",
   "Documentation (API, Code, System Process)",
@@ -19,6 +20,15 @@ const backendSKills = [
   "Working with microservices and message-broker",
 ];
 
-const otherSkills = ["UML", "ERD", "Version Control"];
+const infrastructureSkills = [
+  "Version control",
+  "CI/CD pipeline implementation",
+  "DevOps practices",
+  "Infrastructure as Code",
+  "Containerization and deployment workflows",
+  "Linux system administration and networking",
+  "Cloud infrastructure and deployment",
+  "Observability (metrics, logs, and tracing)",
+];
 
-export { fronendSKills, backendSKills, otherSkills };
+export { fronendSKills, backendSKills, infrastructureSkills };

@@ -45,6 +45,10 @@ export const toDos = [
     name: "GraphQL",
     priority: "high",
   },
+  {
+    name: "Infrastructure as Code (Terraform or OpenTofu)",
+    priority: "high",
+  },
 ];
 
 export const dbTechs = [
@@ -62,7 +66,17 @@ export const devProcessTechs = [
     level: "expert",
   },
   {
-    name: "Docker",
+    name: "Docker & Docker Compose",
+    src: "#",
+    level: "intermediate",
+  },
+  {
+    name: "CI/CD Pipelines",
+    src: "#",
+    level: "intermediate",
+  },
+  {
+    name: "Linux System Administration & Networking",
     src: "#",
     level: "intermediate",
   },
