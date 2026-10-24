@@ -9,7 +9,8 @@ export const experiences = [
   {
     title: "Full Stack Developer",
     duration: "Jan.26 - Present",
-    contributions: "",
+    contributions:
+      "Assisted the frontend team with dashboard and landing page development using Next.js and React. Performed feature testing and helped onboard new restaurants by creating sites and importing menu items from client PDFs and image assets.",
     organization: "E-Restro",
     organization_website: "",
     location: "Sylhet",
@@ -18,7 +19,8 @@ export const experiences = [
   {
     title: "Software Engineer",
     duration: "Feb.25 - Apr.26",
-    contributions: "",
+    contributions:
+      "Built client projects including Clairly, a rental platform for landlords, tenants, and agencies with DossierFacile, Tink-based banking data/history, and Stripe integrations; and Wedcloud, a wedding photography platform for studio-to-partner/client delivery, with partner onboarding and guest-contributed galleries.",
     organization: "Technext Ltd",
     organizatio_website: "",
     location: "Sylhet",
